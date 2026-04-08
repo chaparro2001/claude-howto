@@ -109,12 +109,12 @@ Estos están fuera del alcance de este proyecto:
    - Componente afectado (archivo, sección, ejemplo)
    - Impacto potencial
    - Pasos para reproducir (si aplica)
-   - Corrección sugerida (si tenés una)
+   - Corrección sugerida (si tienes una)
 
 **Qué ocurre después:**
 - Confirmaremos la recepción dentro de las 48 horas
 - Investigaremos y evaluaremos la severidad
-- Trabajaremos con vos para desarrollar una corrección
+- Trabajaremos contigo para desarrollar una corrección
 - Coordinaremos el cronograma de divulgación
 - Te daremos crédito en el aviso de seguridad (a menos que prefieras el anonimato)
 
@@ -180,10 +180,10 @@ Publicamos avisos de seguridad que incluyen:
 
 ### Antes de reportar
 
-- **Verificar el issue**: ¿Podés reproducirlo de manera consistente?
+- **Verificar el issue**: ¿Puedes reproducirlo de manera consistente?
 - **Buscar issues existentes**: ¿Ya fue reportado?
 - **Revisar la documentación**: ¿Hay orientación sobre el uso seguro?
-- **Probar la corrección**: ¿Funciona la corrección que sugerís?
+- **Probar la corrección**: ¿Funciona la corrección que sugieres?
 
 ### Al reportar
 

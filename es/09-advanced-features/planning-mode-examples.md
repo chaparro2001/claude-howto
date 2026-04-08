@@ -509,7 +509,7 @@ Proceed with this plan? (yes/no/modify)
 
 ### Cuándo Usar Planning Mode
 
-✅ **Siempre usalo para**:
+✅ **Siempre úsalo para**:
 - Proyectos de varios días
 - Colaboraciones en equipo
 - Cambios críticos en el sistema
@@ -524,13 +524,13 @@ Proceed with this plan? (yes/no/modify)
 
 ### Buenas Prácticas
 
-1. **Revisá los planes cuidadosamente** antes de aprobarlos
-2. **Modificá los planes** cuando detectes problemas
-3. **Descomponé** las tareas complejas
-4. **Estimá plazos realistas**
-5. **Incluí estrategias de rollback**
-6. **Agregá criterios de éxito**
-7. **Planificá pruebas** en cada fase
+1. **Revisa los planes cuidadosamente** antes de aprobarlos
+2. **Modifica los planes** cuando detectes problemas
+3. **Descompón** las tareas complejas
+4. **Estima plazos realistas**
+5. **Incluye estrategias de rollback**
+6. **Agrega criterios de éxito**
+7. **Planifica pruebas** en cada fase
 
 ---
 **Ultima Actualizacion**: Abril 2026

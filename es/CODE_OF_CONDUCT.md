@@ -95,7 +95,7 @@ Si experimentas o presencias un comportamiento inaceptable, o tienes cualquier o
 
 Por favor proporcionar:
 - Tu información de contacto
-- Nombres de las personas involucradas (si te sentís cómodo compartirlo)
+- Nombres de las personas involucradas (si te sientes cómodo compartirlo)
 - Descripción del incidente
 - Contexto y links relevantes
 - Cómo te afectó el incidente
@@ -119,7 +119,7 @@ Las posibles acciones incluyen:
 
 ### Proceso de apelación
 
-Si considerás que se tomó una decisión por error, podés apelar:
+Si consideras que se tomó una decisión por error, puedes apelar:
 1. Proporcionando nueva información o contexto
 2. Solicitando una revisión por varios mantenedores
 3. Realizando el seguimiento dentro de los 30 días de la decisión inicial
@@ -193,9 +193,9 @@ Al mantener una comunidad respetuosa e inclusiva:
 
 ### Para todos
 - Recordar que hay un ser humano detrás de cada mensaje
-- Tomar descansos si te sentís frustrado
-- Comunicarte con los líderes de la comunidad si necesitás apoyo
-- Ayudar a crear la comunidad en la que querés participar
+- Tomar descansos si te sientes frustrado
+- Comunicarte con los líderes de la comunidad si necesitas apoyo
+- Ayudar a crear la comunidad en la que quieres participar
 
 ## Atribución
 
@@ -206,7 +206,7 @@ Este Código de conducta está adaptado de:
 
 ## ¿Preguntas?
 
-Si tenés preguntas sobre este Código de conducta, por favor comunicate con los mantenedores del proyecto.
+Si tienes preguntas sobre este Código de conducta, por favor comunícate con los mantenedores del proyecto.
 
 ## Historial de versiones
 

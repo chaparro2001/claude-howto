@@ -66,7 +66,7 @@ Las funcionalidades avanzadas de Claude Code extienden las capacidades base con 
 
 ## Planning Mode
 
-El planning mode permite que Claude analice tareas complejas antes de implementarlas, creando un plan detallado que podés revisar y aprobar.
+El planning mode permite que Claude analice tareas complejas antes de implementarlas, creando un plan detallado que puedes revisar y aprobar.
 
 ### ¿Qué es el Planning Mode?
 
@@ -76,7 +76,7 @@ El planning mode es un enfoque en dos fases:
 
 ### Cuándo Usar Planning Mode
 
-✅ Usá planning mode para:
+✅ Usa planning mode para:
 - Refactorización compleja de múltiples archivos
 - Implementaciones de nuevas funcionalidades
 - Cambios de arquitectura
@@ -117,7 +117,7 @@ claude --permission-mode plan
 ### Beneficios del Planning Mode
 
 - **Enfoque de implementación estructurado**: Desglose detallado de los pasos de implementación
-- **Revisión y aprobación**: Aprobá o ajustá el plan antes de la ejecución
+- **Revisión y aprobación**: Aprueba o ajusta el plan antes de la ejecución
 - **Identificación de riesgos**: Detectá posibles problemas antes de implementar
 - **Fases claras**: Fases e hitos de implementación organizados
 
@@ -189,7 +189,7 @@ claude --permission-mode plan
 /plan Implement user authentication system
 ```
 
-**Alias de modelo para planificación**: Usá `opusplan` como alias de modelo para usar Opus en la planificación y Sonnet en la ejecución:
+**Alias de modelo para planificación**: Usa `opusplan` como alias de modelo para usar Opus en la planificación y Sonnet en la ejecución:
 
 ```bash
 claude --model opusplan "design and implement the new API"
@@ -199,7 +199,7 @@ claude --model opusplan "design and implement the new API"
 
 ### Ultraplan
 
-Usá `/ultraplan <prompt>` para un flujo de trabajo de planificación de extremo a extremo: Claude elabora un plan detallado, lo abre en el navegador para revisión y luego lo ejecuta de forma remota o lo envía de vuelta a tu terminal para ejecución local.
+Usa `/ultraplan <prompt>` para un flujo de trabajo de planificación de extremo a extremo: Claude elabora un plan detallado, lo abre en el navegador para revisión y luego lo ejecuta de forma remota o lo envía de vuelta a tu terminal para ejecución local.
 
 ---
 
@@ -342,7 +342,7 @@ export MAX_THINKING_TOKENS=16000
 export CLAUDE_CODE_EFFORT_LEVEL=high
 ```
 
-Alternalo durante una sesión con `Alt+T` / `Option+T`, establecé el esfuerzo con `/effort` o configuralo mediante `/config`.
+Altérnalo durante una sesión con `Alt+T` / `Option+T`, establece el esfuerzo con `/effort` o configúralo mediante `/config`.
 
 ---
 
@@ -431,7 +431,7 @@ Esto garantiza que el usuario siempre mantenga el control cuando el clasificador
 
 ### Establecer Permisos Equivalentes a Auto Mode Sin Plan Team
 
-Si no tenés un plan Team o preferís un enfoque más simple sin el clasificador en segundo plano, podés configurar tu `~/.claude/settings.json` con una línea base conservadora de reglas de permisos seguras. El script comienza con reglas de solo lectura e inspección local, y luego te permite activar ediciones, pruebas, escrituras git locales, instalaciones de paquetes y acciones de escritura de GitHub CLI solo cuando las necesitás.
+Si no tienes un plan Team o prefieres un enfoque más simple sin el clasificador en segundo plano, puedes configurar tu `~/.claude/settings.json` con una línea base conservadora de reglas de permisos seguras. El script comienza con reglas de solo lectura e inspección local, y luego te permite activar ediciones, pruebas, escrituras git locales, instalaciones de paquetes y acciones de escritura de GitHub CLI solo cuando las necesitas.
 
 **Archivo:** `09-advanced-features/setup-auto-mode-permissions.py`
 
@@ -472,7 +472,7 @@ Las background tasks permiten que operaciones de larga duración se ejecuten sin
 
 ### ¿Qué Son las Background Tasks?
 
-Las background tasks se ejecutan de forma asíncrona mientras seguís trabajando:
+Las background tasks se ejecutan de forma asíncrona mientras sigues trabajando:
 - Suites de pruebas largas
 - Procesos de build
 - Migraciones de bases de datos
@@ -609,7 +609,7 @@ También se admiten expresiones cron estándar de 5 campos para programación pr
 
 ### Recordatorios de Una Sola Vez
 
-Establecé recordatorios que se disparan una sola vez a una hora específica:
+Establece recordatorios que se disparan una sola vez a una hora específica:
 
 ```
 remind me at 3pm to push the release branch
@@ -641,7 +641,7 @@ in 45 minutes, run the integration tests
 
 ### Tareas Programadas en la Nube
 
-Usá `/schedule` para crear tareas programadas en la nube que se ejecutan en la infraestructura de Anthropic:
+Usa `/schedule` para crear tareas programadas en la nube que se ejecutan en la infraestructura de Anthropic:
 
 ```
 /schedule daily at 9am run the test suite and report failures
@@ -663,7 +663,7 @@ export CLAUDE_CODE_DISABLE_CRON=1
         If it failed, show the error logs.
 ```
 
-> **Consejo**: Las tareas programadas tienen alcance de sesión. Para automatización persistente que sobreviva reinicios, usá pipelines de CI/CD, GitHub Actions o tareas programadas de la Desktop App.
+> **Consejo**: Las tareas programadas tienen alcance de sesión. Para automatización persistente que sobreviva reinicios, usa pipelines de CI/CD, GitHub Actions o tareas programadas de la Desktop App.
 
 ---
 
@@ -682,7 +682,7 @@ Los permission modes controlan qué acciones puede tomar Claude sin aprobación 
 | `bypassPermissions` | Todas las acciones, sin verificaciones de permisos (peligroso) |
 | `dontAsk` | Solo se ejecutan las herramientas preaprobadas; todas las demás se deniegan |
 
-Alternás entre modos con `Shift+Tab` en el CLI. Establecé un valor predeterminado con el flag `--permission-mode` o el ajuste `permissions.defaultMode`.
+Alterna entre modos con `Shift+Tab` en el CLI. Establece un valor predeterminado con el flag `--permission-mode` o el ajuste `permissions.defaultMode`.
 
 ### Métodos de Activación
 
@@ -726,7 +726,7 @@ Approve this change? (yes/no/show)
 ```
 
 #### Plan Mode
-Revisá el plan de implementación antes de la ejecución:
+Revisa el plan de implementación antes de la ejecución:
 
 ```
 User: /plan Implement user authentication system
@@ -915,7 +915,7 @@ claude -r "auth-refactor" "finish this PR"
 
 ### Hacer Fork de Sesiones
 
-Hacé fork de una sesión para probar un enfoque alternativo sin perder el original:
+Haz fork de una sesión para probar un enfoque alternativo sin perder el original:
 
 ```
 /fork
@@ -1005,7 +1005,7 @@ Creá atajos de teclado personalizados ejecutando `/keybindings`, que abre `~/.c
 }
 ```
 
-Establecé un binding en `null` para desvincularlo de su atajo predeterminado.
+Establece un binding en `null` para desvincularlo de su atajo predeterminado.
 
 ### Contextos Disponibles
 
@@ -1048,7 +1048,7 @@ Los keybindings admiten secuencias chord (combinaciones de múltiples teclas):
 | `Ctrl+A` | Conflicto de terminal | Tecla prefijo de GNU Screen |
 | `Ctrl+Z` | Conflicto de terminal | Suspender proceso |
 
-> **Consejo**: Si un atajo no funciona, verificá conflictos con tu emulador de terminal o multiplexor.
+> **Consejo**: Si un atajo no funciona, verifica conflictos con tu emulador de terminal o multiplexor.
 
 ### Completado por Tab
 
@@ -1081,7 +1081,7 @@ User: Ctrl+R  # Search history
 
 ### Entrada Multilínea
 
-Para consultas complejas, usá el modo multilínea:
+Para consultas complejas, usa el modo multilínea:
 
 ```bash
 User: \
@@ -1120,7 +1120,7 @@ User: Deploy to prodcution<Backspace><Backspace>uction
 Habilitá los keybindings de Vi/Vim para edición de texto:
 
 **Activación**:
-- Usá el comando `/vim` o `/config` para habilitar
+- Usa el comando `/vim` o `/config` para habilitar
 - Cambio de modo con `Esc` para NORMAL, `i/a/o` para INSERT
 
 **Teclas de navegación**:
@@ -1145,7 +1145,7 @@ Ejecutá comandos de shell directamente con el prefijo `!`:
 ! cat src/index.js
 ```
 
-Usalo para ejecutar comandos rápidamente sin cambiar de contexto.
+Úsalo para ejecutar comandos rápidamente sin cambiar de contexto.
 
 ---
 
@@ -1163,9 +1163,9 @@ El Dictado por Voz proporciona entrada de voz push-to-talk para Claude Code, per
 
 | Característica | Descripción |
 |---------|-------------|
-| **Push-to-talk** | Mantené presionada una tecla para grabar, soltá para enviar |
+| **Push-to-talk** | Mantén presionada una tecla para grabar, suelta para enviar |
 | **20 idiomas** | Speech-to-text admite 20 idiomas |
-| **Keybinding personalizado** | Configurá la tecla push-to-talk mediante `/keybindings` |
+| **Keybinding personalizado** | Configura la tecla push-to-talk mediante `/keybindings` |
 | **Requisito de cuenta** | Requiere una cuenta Claude.ai para el procesamiento STT |
 
 ### Configuración
@@ -1199,7 +1199,7 @@ claude --channels discord,telegram,imessage,webhooks
 
 ### Configuración
 
-Configurá los channels con el flag `--channels` al inicio. Para despliegues empresariales, usá la configuración administrada para controlar qué plugins de channel están permitidos:
+Configura los channels con el flag `--channels` al inicio. Para despliegues empresariales, usa la configuración administrada para controlar qué plugins de channel están permitidos:
 
 ```json
 {
@@ -1257,7 +1257,7 @@ La extensión de Chrome gestiona el acceso por sitio. Otorgá o revocá el acces
 
 ### Cómo Funciona
 
-Claude Code controla el navegador en una ventana visible — podés ver las acciones en tiempo real. Cuando el navegador encuentra una página de inicio de sesión o un CAPTCHA, Claude hace una pausa y espera a que lo resuelvas manualmente antes de continuar.
+Claude Code controla el navegador en una ventana visible — puedes ver las acciones en tiempo real. Cuando el navegador encuentra una página de inicio de sesión o un CAPTCHA, Claude hace una pausa y espera a que lo resuelvas manualmente antes de continuar.
 
 ### Limitaciones Conocidas
 
@@ -1335,7 +1335,7 @@ Tres formas de conectarse desde otro dispositivo:
 
 - Controlar Claude Code desde un dispositivo móvil o tablet cuando no estás en tu escritorio
 - Usar la interfaz más rica de claude.ai manteniendo la ejecución local de herramientas
-- Revisiones rápidas de código mientras te movés con tu entorno de desarrollo local completo
+- Revisiones rápidas de código mientras te mueves con tu entorno de desarrollo local completo
 
 ---
 
@@ -1350,11 +1350,11 @@ Las Web Sessions te permiten ejecutar Claude Code directamente en el navegador e
 claude --remote "implement the new API endpoints"
 ```
 
-Esto inicia una sesión de Claude Code en claude.ai a la que podés acceder desde cualquier navegador.
+Esto inicia una sesión de Claude Code en claude.ai a la que puedes acceder desde cualquier navegador.
 
 ### Reanudar Web Sessions Localmente
 
-Si iniciaste una sesión en la web y querés continuarla localmente:
+Si iniciaste una sesión en la web y quieres continuarla localmente:
 
 ```bash
 # Resume a web session in the local terminal
@@ -1407,7 +1407,7 @@ Transferí tu sesión actual del CLI a la Desktop App:
 
 ### Configuración de la Vista Previa de App
 
-Configurá el comportamiento del servidor de desarrollo en `.claude/launch.json`:
+Configura el comportamiento del servidor de desarrollo en `.claude/launch.json`:
 
 ```json
 {
@@ -1472,7 +1472,7 @@ Las tareas persisten a través de compactaciones de contexto, asegurando que los
 
 ### Directorios de Tareas con Nombre
 
-Usá la variable de entorno `CLAUDE_CODE_TASK_LIST_ID` para crear directorios de tareas con nombre compartidos entre sesiones:
+Usa la variable de entorno `CLAUDE_CODE_TASK_LIST_ID` para crear directorios de tareas con nombre compartidos entre sesiones:
 
 ```bash
 export CLAUDE_CODE_TASK_LIST_ID=my-project-sprint-3
@@ -1523,7 +1523,7 @@ Los worktrees se crean en:
 
 ### Sparse Checkout para Monorepos
 
-Usá el ajuste `worktree.sparsePaths` para realizar sparse-checkout en monorepos, reduciendo el uso de disco y el tiempo de clonación:
+Usa el ajuste `worktree.sparsePaths` para realizar sparse-checkout en monorepos, reduciendo el uso de disco y el tiempo de clonación:
 
 ```json
 {
@@ -1604,7 +1604,7 @@ claude --no-sandbox    # Disable sandboxing
 - Los comandos Bash se ejecutan en un entorno con sandbox con acceso restringido al sistema de archivos
 - El acceso a la red puede aislarse para prevenir conexiones externas no deseadas
 - Funciona junto con las reglas de permisos para una defensa en profundidad
-- En macOS, usá `sandbox.enableWeakerNetworkIsolation` para restricciones de red (el aislamiento completo de red no está disponible en macOS)
+- En macOS, usa `sandbox.enableWeakerNetworkIsolation` para restricciones de red (el aislamiento completo de red no está disponible en macOS)
 
 ### Casos de Uso
 
@@ -1735,7 +1735,7 @@ Desde v2.1.83, los administradores pueden desplegar múltiples archivos de manag
 
 ### Variables de Entorno
 
-Sobreescribí la configuración con variables de entorno:
+Sobreescribe la configuración con variables de entorno:
 
 ```bash
 # Model selection
@@ -1852,7 +1852,7 @@ O agregalo a tu JSON de ajustes:
 - Un **team lead** coordina la tarea general y delega subtareas a los compañeros de equipo
 - Los **teammates** trabajan de forma independiente, cada uno con su propia context window
 - Una **lista de tareas compartida** habilita la auto-coordinación entre los miembros del equipo
-- Usá definiciones de subagente (`.claude/agents/` o el flag `--agents`) para definir los roles y especializaciones de los teammates
+- Usa definiciones de subagente (`.claude/agents/` o el flag `--agents`) para definir los roles y especializaciones de los teammates
 
 ### Modos de Visualización
 
@@ -1885,34 +1885,34 @@ claude --teammate-mode in-process
 ## Buenas Prácticas
 
 ### Planning Mode
-- ✅ Usalo para tareas complejas de múltiples pasos
-- ✅ Revisá los planes antes de aprobarlos
-- ✅ Modificá los planes cuando sea necesario
+- ✅ Úsalo para tareas complejas de múltiples pasos
+- ✅ Revisa los planes antes de aprobarlos
+- ✅ Modifica los planes cuando sea necesario
 - ❌ No lo uses para tareas simples
 
 ### Extended Thinking
-- ✅ Usalo para decisiones arquitectónicas
-- ✅ Usalo para resolución de problemas complejos
-- ✅ Revisá el proceso de razonamiento
+- ✅ Úsalo para decisiones arquitectónicas
+- ✅ Úsalo para resolución de problemas complejos
+- ✅ Revisa el proceso de razonamiento
 - ❌ No lo uses para consultas simples
 
 ### Background Tasks
-- ✅ Usalo para operaciones de larga duración
-- ✅ Monitoreá el progreso de las tareas
-- ✅ Manejá los fallos de tareas con elegancia
+- ✅ Úsalo para operaciones de larga duración
+- ✅ Monitorea el progreso de las tareas
+- ✅ Maneja los fallos de tareas con elegancia
 - ❌ No inicies demasiadas tareas concurrentes
 
 ### Permisos
-- ✅ Usá `plan` para revisión de código (solo lectura)
-- ✅ Usá `default` para desarrollo interactivo
-- ✅ Usá `acceptEdits` para flujos de trabajo de automatización
-- ✅ Usá `auto` para trabajo autónomo con controles de seguridad
+- ✅ Usa `plan` para revisión de código (solo lectura)
+- ✅ Usa `default` para desarrollo interactivo
+- ✅ Usa `acceptEdits` para flujos de trabajo de automatización
+- ✅ Usa `auto` para trabajo autónomo con controles de seguridad
 - ❌ No uses `bypassPermissions` a menos que sea absolutamente necesario
 
 ### Sesiones
-- ✅ Usá sesiones separadas para tareas diferentes
-- ✅ Guardá los estados de sesión importantes
-- ✅ Limpiá las sesiones antiguas
+- ✅ Usa sesiones separadas para tareas diferentes
+- ✅ Guarda los estados de sesión importantes
+- ✅ Limpia las sesiones antiguas
 - ❌ No mezcles trabajo no relacionado en una sola sesión
 
 ---

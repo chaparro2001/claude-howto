@@ -11,14 +11,14 @@ Gracias por tu interés en contribuir a este proyecto. Esta guía te ayudará a 
 
 Claude How To es una guía visual y orientada a ejemplos para Claude Code. Ofrecemos:
 - **Diagramas Mermaid** que explican cómo funcionan las funcionalidades
-- **Templates listos para producción** que podés usar de inmediato
+- **Templates listos para producción** que puedes usar de inmediato
 - **Ejemplos del mundo real** con contexto y buenas prácticas
 - **Rutas de aprendizaje progresivas** desde principiante hasta avanzado
 
 ## Tipos de contribuciones
 
 ### 1. Nuevos ejemplos o templates
-Agregá ejemplos para funcionalidades existentes (slash commands, skills, hooks, etc.):
+Agrega ejemplos para funcionalidades existentes (slash commands, skills, hooks, etc.):
 - Código listo para copiar y pegar
 - Explicaciones claras de cómo funciona
 - Casos de uso y beneficios
@@ -59,7 +59,7 @@ cd claude-howto
 ```
 
 ### 2. Crear un branch
-Usá un nombre descriptivo para el branch:
+Usa un nombre descriptivo para el branch:
 ```bash
 git checkout -b add/feature-name
 git checkout -b fix/issue-description
@@ -366,7 +366,7 @@ Se espera que todos los colaboradores respeten este código y se traten mutuamen
 
 ## Licencia
 
-Al contribuir a este proyecto, aceptás que tus contribuciones estarán licenciadas bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
+Al contribuir a este proyecto, aceptas que tus contribuciones estarán licenciadas bajo la Licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
 
 ## ¿Preguntas?
 

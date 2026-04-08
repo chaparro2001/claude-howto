@@ -106,7 +106,7 @@ Estos skills vienen con Claude Code y se invocan como slash commands:
 | `/review` | Deprecado — reemplazado por el plugin `code-review` |
 | `/output-style` | Deprecado desde v2.1.73 |
 | `/fork` | Renombrado a `/branch` (alias sigue funcionando, v2.1.77) |
-| `/pr-comments` | Eliminado en v2.1.91 — pedile a Claude directamente que vea los comentarios del PR |
+| `/pr-comments` | Eliminado en v2.1.91 — pídele a Claude directamente que vea los comentarios del PR |
 | `/vim` | Eliminado en v2.1.92 — usar /config -> Editor mode |
 
 ### Cambios Recientes
@@ -118,7 +118,7 @@ Estos skills vienen con Claude Code y se invocan como slash commands:
 - Comando `/voice` agregado para dictado por voz push-to-talk
 - Comando `/schedule` agregado para crear/gestionar tareas programadas
 - Comando `/color` agregado para personalizar la barra de prompt
-- /pr-comments eliminado en v2.1.91 — pedile a Claude directamente que vea los comentarios del PR
+- /pr-comments eliminado en v2.1.91 — pídele a Claude directamente que vea los comentarios del PR
 - /vim eliminado en v2.1.92 — usar /config -> Editor mode en su lugar
 - /ultraplan agregado para revision y ejecucion de planes en el navegador
 - /powerup agregado para lecciones interactivas de features

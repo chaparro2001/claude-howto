@@ -15,17 +15,17 @@ $ARGUMENTS
 - **Audiencia objetivo**: Para quién es el blog post (opcional)
 - **Tono/Estilo**: Formal, casual, técnico, etc. (opcional)
 
-**IMPORTANTE**: Si el usuario está pidiendo actualizaciones a un **blog post existente**, omití los pasos 0-8 y comenzá directamente en el **Paso 9**. Leé primero los archivos de borrador existentes y luego continuá con el proceso de iteración.
+**IMPORTANTE**: Si el usuario está pidiendo actualizaciones a un **blog post existente**, omite los pasos 0-8 y comienza directamente en el **Paso 9**. Lee primero los archivos de borrador existentes y luego continúa con el proceso de iteración.
 
 ## Flujo de ejecución
 
-Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la aprobación del usuario donde se indica.**
+Sigue estos pasos de forma secuencial. **No omitas pasos ni avances sin la aprobación del usuario donde se indica.**
 
 ### Paso 0: Crear carpeta del proyecto
 
-1. Generá un nombre de carpeta con el formato: `YYYY-MM-DD-short-topic-name`
-   - Usá la fecha de hoy
-   - Creá un slug corto y amigable para URLs a partir del tema (minúsculas, guiones, máximo 5 palabras)
+1. Genera un nombre de carpeta con el formato: `YYYY-MM-DD-short-topic-name`
+   - Usa la fecha de hoy
+   - Crea un slug corto y amigable para URLs a partir del tema (minúsculas, guiones, máximo 5 palabras)
 
 2. Creá la estructura de carpetas:
    ```
@@ -38,14 +38,14 @@ Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la apro
 
 ### Paso 1: Investigación y recopilación de recursos
 
-1. Creá la subcarpeta `resources/` dentro del directorio del blog post
+1. Crea la subcarpeta `resources/` dentro del directorio del blog post
 
 2. Para cada recurso proporcionado:
-   - **URLs**: Descargá y guardá la información clave en `resources/` como archivos markdown
-   - **Archivos**: Leé y resumí en `resources/`
-   - **Temas**: Usá búsqueda web para recopilar información actualizada
+   - **URLs**: Descarga y guarda la información clave en `resources/` como archivos markdown
+   - **Archivos**: Lee y resume en `resources/`
+   - **Temas**: Usa búsqueda web para recopilar información actualizada
 
-3. Para cada recurso, creá un archivo de resumen en `resources/`:
+3. Para cada recurso, crea un archivo de resumen en `resources/`:
    - `resources/source-1-[short-name].md`
    - `resources/source-2-[short-name].md`
    - etc.
@@ -66,18 +66,18 @@ Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la apro
    Brief explanation of relevance
    ```
 
-5. Presentá el resumen de la investigación al usuario.
+5. Presenta el resumen de la investigación al usuario.
 
 ### Paso 2: Lluvia de ideas y aclaración
 
-1. Basándote en la idea y los recursos investigados, presentá:
+1. Basándote en la idea y los recursos investigados, presenta:
    - **Temas principales** identificados en la investigación
    - **Ángulos posibles** para el blog post
    - **Puntos clave** que deberían cubrirse
    - **Brechas** de información que necesitan aclaración
 
-2. Hacé preguntas aclaratorias:
-   - ¿Cuál es el mensaje principal que querés que los lectores se lleven?
+2. Haz preguntas aclaratorias:
+   - ¿Cuál es el mensaje principal que quieres que los lectores se lleven?
    - ¿Hay puntos específicos de la investigación que quieras enfatizar?
    - ¿Cuál es la extensión objetivo? (corto: 500-800 palabras, medio: 1000-1500, largo: 2000+)
    - ¿Hay puntos que quieras excluir?
@@ -124,32 +124,32 @@ Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la apro
    - Source 2
    ```
 
-2. Presentá el esquema al usuario y **pedí aprobación o modificaciones**.
+2. Presenta el esquema al usuario y **pide aprobación o modificaciones**.
 
 ### Paso 4: Guardar el esquema aprobado
 
-1. Una vez que el usuario apruebe el esquema, guardalo en `OUTLINE.md` dentro de la carpeta del blog post.
+1. Una vez que el usuario apruebe el esquema, guárdalo en `OUTLINE.md` dentro de la carpeta del blog post.
 
 2. Confirmá que el esquema fue guardado.
 
 ### Paso 5: Commit del esquema (si está en un repositorio git)
 
-1. Verificá si el directorio actual es un repositorio git.
+1. Verifica si el directorio actual es un repositorio git.
 
 2. Si lo es:
    - Stagear los nuevos archivos: carpeta del blog post, recursos y OUTLINE.md
    - Crear el commit con el mensaje: `docs: Add outline for blog post - [topic-name]`
    - Push al remoto
 
-3. Si no es un repositorio git, omití este paso e informá al usuario.
+3. Si no es un repositorio git, omite este paso e informa al usuario.
 
 ### Paso 6: Escribir el borrador
 
-1. Basándote en el esquema aprobado, escribí el borrador completo del blog post.
+1. Basándote en el esquema aprobado, escribe el borrador completo del blog post.
 
-2. Seguí la estructura de OUTLINE.md exactamente.
+2. Sigue la estructura de OUTLINE.md exactamente.
 
-3. Incluí:
+3. Incluye:
    - Introducción atractiva con un gancho
    - Encabezados de sección claros
    - Evidencia y ejemplos de la investigación
@@ -157,7 +157,7 @@ Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la apro
    - Conclusión sólida con mensaje clave
    - **Citas**: Todas las comparaciones, estadísticas, datos y afirmaciones factuales DEBEN citar la fuente original
 
-4. Guardá el borrador como `draft-v0.1.md` en la carpeta del blog post.
+4. Guarda el borrador como `draft-v0.1.md` en la carpeta del blog post.
 
 5. Formato:
    ```markdown
@@ -177,27 +177,27 @@ Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la apro
 
 6. **Requisitos de citas**:
    - Cada dato, estadística o comparación DEBE tener una cita en línea
-   - Usá referencias numeradas [1], [2], etc., o citas con nombre [Nombre de la fuente]
-   - Vinculá las citas a la sección de Referencias al final
+   - Usa referencias numeradas [1], [2], etc., o citas con nombre [Nombre de la fuente]
+   - Vincula las citas a la sección de Referencias al final
    - Ejemplo: "Los estudios muestran que el 65% de los desarrolladores prefieren TypeScript [1]"
    - Ejemplo: "React supera a Vue en velocidad de renderizado en un 20% [React Benchmarks 2024]"
 
 ### Paso 7: Commit del borrador (si está en un repositorio git)
 
-1. Verificá si estás en un repositorio git.
+1. Verifica si estás en un repositorio git.
 
 2. Si lo es:
    - Stagear el archivo de borrador
    - Crear el commit con el mensaje: `docs: Add draft v0.1 for blog post - [topic-name]`
    - Push al remoto
 
-3. Si no es un repositorio git, omití e informá al usuario.
+3. Si no es un repositorio git, omite e informa al usuario.
 
 ### Paso 8: Presentar el borrador para revisión
 
-1. Presentá el contenido del borrador al usuario.
+1. Presenta el contenido del borrador al usuario.
 
-2. Pedí retroalimentación:
+2. Pide retroalimentación:
    - ¿Impresión general?
    - ¿Secciones que necesitan expansión o reducción?
    - ¿Ajustes de tono necesarios?
@@ -209,12 +209,12 @@ Seguí estos pasos de forma secuencial. **No omitas pasos ni avances sin la apro
 ### Paso 9: Iterar o finalizar
 
 **Si el usuario solicita cambios:**
-1. Anotá todas las modificaciones solicitadas
-2. Volvé al Paso 6 con los siguientes ajustes:
+1. Anota todas las modificaciones solicitadas
+2. Vuelve al Paso 6 con los siguientes ajustes:
    - Incrementá el número de versión (v0.2, v0.3, etc.)
    - Incorporá toda la retroalimentación
    - Guardá como `draft-v[X.Y].md`
-   - Repetí los Pasos 7-8
+   - Repite los Pasos 7-8
 
 **Si el usuario aprueba:**
 1. Confirmá la versión final del borrador
@@ -252,17 +252,17 @@ blog-posts/
 
 ## Consejos para la calidad
 
-- **Gancho**: Comenzá con una pregunta, un dato sorprendente o un escenario identificable
+- **Gancho**: Comienza con una pregunta, un dato sorprendente o un escenario identificable
 - **Flujo**: Cada párrafo debe conectar con el siguiente
 - **Evidencia**: Apoyá las afirmaciones con datos de la investigación
 - **Citas**: SIEMPRE citá fuentes para:
   - Todas las estadísticas y datos (ej.: "Según [Fuente], el 75% de...")
   - Comparaciones entre productos, servicios o enfoques (ej.: "X funciona 2x más rápido que Y [Fuente]")
   - Afirmaciones factuales sobre tendencias del mercado, hallazgos de investigación o benchmarks
-  - Usá citas en línea con el formato: [Nombre de la fuente] o [Autor, Año]
-- **Voz**: Mantené un tono consistente en todo el texto
-- **Extensión**: Respetá el recuento de palabras objetivo
-- **Legibilidad**: Usá párrafos cortos y viñetas donde corresponda
+  - Usa citas en línea con el formato: [Nombre de la fuente] o [Autor, Año]
+- **Voz**: Mantén un tono consistente en todo el texto
+- **Extensión**: Respeta el recuento de palabras objetivo
+- **Legibilidad**: Usa párrafos cortos y viñetas donde corresponda
 - **CTA**: Terminá con un llamado a la acción claro o una pregunta que invite a reflexionar
 
 ## Notas
@@ -270,5 +270,5 @@ blog-posts/
 - Siempre esperá la aprobación del usuario en los puntos de control indicados
 - Conservá todas las versiones de los borradores para tener un historial
 - Usá búsqueda web para obtener información actualizada cuando se proporcionen URLs
-- Si los recursos son insuficientes, pedile más al usuario o sugerí investigación adicional
+- Si los recursos son insuficientes, pídele más al usuario o sugiere investigación adicional
 - Adaptá el tono según la audiencia objetivo (técnica, general, empresarial, etc.)

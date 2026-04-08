@@ -12,7 +12,7 @@ Un enfoque sistemático para refactorizar código basado en la metodología de M
 ## Principios fundamentales
 
 1. **Preservación del comportamiento**: El comportamiento externo debe permanecer sin cambios
-2. **Pasos pequeños**: Realizá cambios mínimos y verificables
+2. **Pasos pequeños**: Realiza cambios mínimos y verificables
 3. **Orientado a tests**: Los tests son la red de seguridad
 4. **Continuo**: La refactorización es un proceso continuo, no un evento único
 5. **Colaborativo**: Se requiere la aprobación del usuario en cada fase
@@ -46,23 +46,23 @@ Phase 6: Review & Iteration
 Antes de empezar, aclarár:
 
 1. **Alcance**: ¿Qué archivos/módulos/funciones necesitan refactorización?
-2. **Objetivos**: ¿Qué problemas intentás resolver? (legibilidad, rendimiento, mantenibilidad)
+2. **Objetivos**: ¿Qué problemas intentas resolver? (legibilidad, rendimiento, mantenibilidad)
 3. **Restricciones**: ¿Hay alguna área que NO deba cambiarse?
 4. **Presión de tiempo**: ¿Esto está bloqueando otro trabajo?
 5. **Estado de los tests**: ¿Existen tests? ¿Están pasando?
 
 ### Acciones
-- [ ] Leé y entendé el código objetivo
-- [ ] Identificá dependencias e integraciones
-- [ ] Documentá la arquitectura actual
-- [ ] Anotá los marcadores de deuda técnica existentes (TODOs, FIXMEs)
+- [ ] Lee y entiende el código objetivo
+- [ ] Identifica dependencias e integraciones
+- [ ] Documenta la arquitectura actual
+- [ ] Anota los marcadores de deuda técnica existentes (TODOs, FIXMEs)
 
 ### Resultado
-Presentá los hallazgos al usuario:
+Presenta los hallazgos al usuario:
 - Resumen de la estructura del código
 - Áreas problemáticas identificadas
 - Recomendaciones iniciales
-- **Solicitá aprobación para continuar**
+- **Solicita aprobación para continuar**
 
 ---
 
@@ -71,17 +71,17 @@ Presentá los hallazgos al usuario:
 ### Por qué importan los tests
 > "Refactoring without tests is like driving without a seatbelt." — Martin Fowler
 
-Los tests son el **habilitador clave** de la refactorización segura. Sin ellos, corrés el riesgo de introducir bugs.
+Los tests son el **habilitador clave** de la refactorización segura. Sin ellos, corres el riesgo de introducir bugs.
 
 ### Pasos de evaluación
 
-1. **Verificá si existen tests**
+1. **Verifica si existen tests**
    ```bash
    # Look for test files
    find . -name "*test*" -o -name "*spec*" | head -20
    ```
 
-2. **Ejecutá los tests existentes**
+2. **Ejecuta los tests existentes**
    ```bash
    # JavaScript/TypeScript
    npm test
@@ -93,7 +93,7 @@ Los tests son el **habilitador clave** de la refactorización segura. Sin ellos,
    mvn test
    ```
 
-3. **Verificá la cobertura (si está disponible)**
+3. **Verifica la cobertura (si está disponible)**
    ```bash
    # JavaScript
    npm run test:coverage
@@ -108,23 +108,23 @@ Los tests son el **habilitador clave** de la refactorización segura. Sin ellos,
 - Procedé a la Fase 3
 
 **Si los tests faltan o están incompletos:**
-Presentá opciones:
+Presenta opciones:
 1. Escribir tests primero (recomendado)
 2. Agregar tests de forma incremental durante la refactorización
 3. Proceder sin tests (riesgoso — requiere reconocimiento del usuario)
 
 **Si los tests están fallando:**
-- DETENTE. Arreglá los tests que fallan antes de refactorizar
-- Preguntale al usuario: ¿Deberíamos arreglar los tests primero?
+- DETENTE. Arregla los tests que fallan antes de refactorizar
+- Pregúntale al usuario: ¿Deberíamos arreglar los tests primero?
 
 ### Guías para escribir tests (si es necesario)
 
-Para cada función que se refactorice, asegurate de que los tests cubran:
+Para cada función que se refactorice, asegúrate de que los tests cubran:
 - Camino feliz (operación normal)
 - Casos límite (entradas vacías, null, límites)
 - Escenarios de error (entradas inválidas, excepciones)
 
-Usá el ciclo "red-green-refactor":
+Usa el ciclo "red-green-refactor":
 1. Escribir el test que falla (rojo)
 2. Hacerlo pasar (verde)
 3. Refactorizar
@@ -138,7 +138,7 @@ Síntomas de problemas más profundos en el código. No son bugs, sino indicador
 
 ### Code smells comunes a verificar
 
-Consultá [references/code-smells.md](references/code-smells.md) para el catálogo completo.
+Consulta [references/code-smells.md](references/code-smells.md) para el catálogo completo.
 
 #### Referencia rápida
 
@@ -164,22 +164,22 @@ Consultá [references/code-smells.md](references/code-smells.md) para el catálo
 
 2. **Revisión manual**
    - Recorré el código de forma sistemática
-   - Anotá cada smell con su ubicación y severidad
-   - Categorizá por impacto (Crítico/Alto/Medio/Bajo)
+   - Anota cada smell con su ubicación y severidad
+   - Categoriza por impacto (Crítico/Alto/Medio/Bajo)
 
 3. **Priorización**
-   Enfocate en los smells que:
+   Enfócate en los smells que:
    - Bloquean el desarrollo actual
    - Causan bugs o confusión
    - Afectan los caminos de código que más cambian
 
 ### Resultado: Informe de smells
 
-Presentá al usuario:
+Presenta al usuario:
 - Lista de smells identificados con ubicaciones
 - Evaluación de severidad para cada uno
 - Orden de prioridad recomendado
-- **Solicitá aprobación sobre las prioridades**
+- **Solicita aprobación sobre las prioridades**
 
 ---
 
@@ -187,9 +187,9 @@ Presentá al usuario:
 
 ### Selección de refactorizaciones
 
-Para cada smell, seleccioná una refactorización apropiada del catálogo.
+Para cada smell, selecciona una refactorización apropiada del catálogo.
 
-Consultá [references/refactoring-catalog.md](references/refactoring-catalog.md) para la lista completa.
+Consulta [references/refactoring-catalog.md](references/refactoring-catalog.md) para la lista completa.
 
 #### Mapeo de smell a refactorización
 
@@ -208,7 +208,7 @@ Consultá [references/refactoring-catalog.md](references/refactoring-catalog.md)
 
 ### Estructura del plan
 
-Usá el template en [templates/refactoring-plan.md](templates/refactoring-plan.md).
+Usa el template en [templates/refactoring-plan.md](templates/refactoring-plan.md).
 
 Para cada refactorización:
 1. **Objetivo**: Qué código cambiará
@@ -223,27 +223,27 @@ Para cada refactorización:
 **CRÍTICO**: Introducí la refactorización gradualmente en fases.
 
 **Fase A: Ganancias rápidas** (Bajo riesgo, alto valor)
-- Renombrá variables para mayor claridad
-- Extraé código duplicado obvio
-- Eliminá código muerto
+- Renombra variables para mayor claridad
+- Extrae código duplicado obvio
+- Elimina código muerto
 
 **Fase B: Mejoras estructurales** (Riesgo medio)
-- Extraé métodos de funciones largas
-- Introducí objetos de parámetros
-- Mové métodos a las clases apropiadas
+- Extrae métodos de funciones largas
+- Introduce objetos de parámetros
+- Mueve métodos a las clases apropiadas
 
 **Fase C: Cambios arquitectónicos** (Mayor riesgo)
-- Reemplazá condicionales con polimorfismo
-- Extraé clases
-- Introducí patrones de diseño
+- Reemplaza condicionales con polimorfismo
+- Extrae clases
+- Introduce patrones de diseño
 
 ### Punto de decisión: Presentar el plan al usuario
 
 Antes de la implementación:
-- Mostrá el plan de refactorización completo
-- Explicá cada fase y sus riesgos
-- Obtené aprobación explícita para cada fase
-- **Preguntá**: "¿Procedo con la Fase A?"
+- Muestra el plan de refactorización completo
+- Explica cada fase y sus riesgos
+- Obtén aprobación explícita para cada fase
+- **Pregunta**: "¿Procedo con la Fase A?"
 
 ---
 
@@ -260,23 +260,23 @@ Para cada paso de refactorización:
    - Los tests están pasando (verde)
    - El código compila
 
-2. **Realizá UN cambio pequeño**
-   - Seguí la mecánica del catálogo
-   - Mantené los cambios mínimos
+2. **Realiza UN cambio pequeño**
+   - Sigue la mecánica del catálogo
+   - Mantén los cambios mínimos
 
-3. **Verificá**
-   - Ejecutá los tests inmediatamente
-   - Verificá errores de compilación
+3. **Verifica**
+   - Ejecuta los tests inmediatamente
+   - Verifica errores de compilación
 
 4. **Si los tests pasan (verde)**
-   - Hacé un commit con un mensaje descriptivo
-   - Pasá al siguiente paso
+   - Haz un commit con un mensaje descriptivo
+   - Pasa al siguiente paso
 
 5. **Si los tests fallan (rojo)**
    - DETENTE inmediatamente
-   - Deshacé el cambio
-   - Analizá qué salió mal
-   - Preguntale al usuario si no está claro
+   - Deshaz el cambio
+   - Analiza qué salió mal
+   - Pregúntale al usuario si no está claro
 
 ### Estrategia de commits
 
@@ -294,11 +294,11 @@ refactor: Remove unused validateOldFormat() method
 
 ### Reporte de progreso
 
-Después de cada sub-fase, reportale al usuario:
+Después de cada sub-fase, repórtale al usuario:
 - Cambios realizados
 - ¿Los tests siguen pasando?
 - ¿Algún problema encontrado?
-- **Preguntá**: "¿Continúo con el siguiente lote?"
+- **Pregunta**: "¿Continúo con el siguiente lote?"
 
 ---
 
@@ -315,28 +315,28 @@ Después de cada sub-fase, reportale al usuario:
 
 ### Comparación de métricas
 
-Ejecutá el análisis de complejidad antes y después:
+Ejecuta el análisis de complejidad antes y después:
 ```bash
 python scripts/analyze-complexity.py <file>
 ```
 
-Presentá las mejoras:
+Presenta las mejoras:
 - Cambio en líneas de código
 - Cambio en complejidad ciclomática
 - Cambio en el índice de mantenibilidad
 
 ### Revisión del usuario
 
-Presentá los resultados finales:
+Presenta los resultados finales:
 - Resumen de todos los cambios
 - Comparación del código antes/después
 - Mejoras en métricas
 - Deuda técnica restante
-- **Preguntá**: "¿Estás satisfecho con estos cambios?"
+- **Pregunta**: "¿Estás satisfecho con estos cambios?"
 
 ### Próximos pasos
 
-Conversá con el usuario:
+Conversa con el usuario:
 - ¿Smells adicionales a abordar?
 - ¿Programar una refactorización de seguimiento?
 - ¿Aplicar cambios similares en otros lugares?
@@ -347,27 +347,27 @@ Conversá con el usuario:
 
 ### Cuándo DETENERSE y consultar
 
-Siempre pausá y consultale al usuario cuando:
+Siempre pausa y consulta al usuario cuando:
 - No estés seguro sobre la lógica del negocio
 - Un cambio podría afectar APIs externas
 - La cobertura de tests es insuficiente
 - Se necesita una decisión arquitectónica importante
 - El nivel de riesgo aumenta
-- Encontrés complejidad inesperada
+- Encuentres complejidad inesperada
 
 ### Reglas de seguridad
 
 1. **Nunca refactorices sin tests** (salvo que el usuario reconozca explícitamente el riesgo)
-2. **Nunca hagas cambios grandes** — dividílos en pasos pequeños
+2. **Nunca hagas cambios grandes** — divídelos en pasos pequeños
 3. **Nunca omitas ejecutar los tests** después de cada cambio
-4. **Nunca continúes si los tests fallan** — arreglá o hacé rollback primero
-5. **Nunca asumas** — cuando tengas dudas, preguntá
+4. **Nunca continúes si los tests fallan** — arregla o haz rollback primero
+5. **Nunca asumas** — cuando tengas dudas, pregunta
 
 ### Qué NO hacer
 
 - No combines refactorización con adición de funcionalidades
 - No refactorices durante emergencias en producción
-- No refactorices código que no entendés
+- No refactorices código que no entiendes
 - No sobre-ingenierices — mantenerlo simple
 - No refactorices todo a la vez
 
@@ -389,14 +389,14 @@ function processOrder(order) {
 
 **Pasos de refactorización:**
 
-1. **Asegurate de que existan tests** para processOrder()
-2. **Extraé** la validación en validateOrder()
-3. **Testea** — debería pasar
-4. **Extraé** el cálculo en calculateOrderTotal()
-5. **Testea** — debería pasar
-6. **Extraé** la notificación en notifyCustomer()
-7. **Testea** — debería pasar
-8. **Revisá** — processOrder() ahora orquesta 3 funciones claras
+1. **Asegúrate de que existan tests** para processOrder()
+2. **Extrae** la validación en validateOrder()
+3. **Prueba** — debería pasar
+4. **Extrae** el cálculo en calculateOrderTotal()
+5. **Prueba** — debería pasar
+6. **Extrae** la notificación en notifyCustomer()
+7. **Prueba** — debería pasar
+8. **Revisa** — processOrder() ahora orquesta 3 funciones claras
 
 **Después:**
 ```javascript

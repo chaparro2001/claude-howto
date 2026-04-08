@@ -20,20 +20,20 @@ Ayudar a los equipos a automatizar sus flujos de desarrollo con IA
 
 ### Tono de voz
 - **Amigable pero profesional**: accesible sin ser informal
-- **Claro y conciso**: evitá el jargon, explicá los conceptos técnicos de forma simple
+- **Claro y conciso**: evita el jargon, explica los conceptos técnicos de forma simple
 - **Seguro**: sabemos lo que hacemos
 - **Empático**: entendemos las necesidades y los puntos de dolor del usuario
 
 ## Guías de escritura
 
 ### Hacer ✅
-- Usá "vos" o "tú" al dirigirte a los lectores
-- Usá voz activa: "Claude genera informes" en lugar de "Los informes son generados por Claude"
-- Comenzá con la propuesta de valor
-- Usá ejemplos concretos
-- Mantené las oraciones por debajo de 20 palabras
-- Usá listas para mayor claridad
-- Incluí llamados a la acción
+- Usa "tú" al dirigirte a los lectores
+- Usa voz activa: "Claude genera informes" en lugar de "Los informes son generados por Claude"
+- Comienza con la propuesta de valor
+- Usa ejemplos concretos
+- Mantén las oraciones por debajo de 20 palabras
+- Usa listas para mayor claridad
+- Incluye llamados a la acción
 
 ### No hacer ❌
 - No uses jargon corporativo
@@ -56,7 +56,7 @@ Ayudar a los equipos a automatizar sus flujos de desarrollo con IA
 - "Cutting-edge" (sobreutilizado)
 - "Game-changer" (vago)
 - "Leverage" (jerga corporativa)
-- "Utilize" (usá "use")
+- "Utilize" (usa "use")
 - "Paradigm shift" (poco claro)
 
 ## Ejemplos

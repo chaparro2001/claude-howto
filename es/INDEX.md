@@ -343,9 +343,9 @@ Guardar el estado de la conversación y explorar enfoques alternativos.
 **Uso**:
 ```
 # Los checkpoints se crean automáticamente con cada prompt del usuario
-# Para hacer rewind, presioná Esc dos veces o usá:
+# Para hacer rewind, presiona Esc dos veces o usa:
 /rewind
-# Luego elegí: Restore code and conversation, Restore conversation,
+# Luego elige: Restore code and conversation, Restore conversation,
 # Restore code, Summarize from here, o Never mind
 ```
 
@@ -725,8 +725,8 @@ chmod +x ~/.claude/hooks/*.sh
 ### Experimentación segura
 ```bash
 # Los checkpoints se crean automáticamente con cada prompt del usuario
-# Para hacer rewind: presioná Esc+Esc o usá /rewind
-# Luego elegí qué restaurar desde el menú de rewind
+# Para hacer rewind: presiona Esc+Esc o usa /rewind
+# Luego elige qué restaurar desde el menú de rewind
 
 # Ver 08-checkpoints/README.md para ejemplos
 ```
@@ -865,12 +865,12 @@ Run tests in background
 
 ## Contribuciones
 
-¿Querés agregar más ejemplos? Seguí esta estructura:
-1. Creá el subdirectorio correspondiente
-2. Incluí un README.md con las instrucciones de uso
-3. Seguí las convenciones de nombres
-4. Probalo exhaustivamente
-5. Actualizá este índice
+¿Quieres agregar más ejemplos? Sigue esta estructura:
+1. Crea el subdirectorio correspondiente
+2. Incluye un README.md con las instrucciones de uso
+3. Sigue las convenciones de nombres
+4. Pruébalo exhaustivamente
+5. Actualiza este índice
 
 ---
 

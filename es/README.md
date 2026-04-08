@@ -17,11 +17,11 @@
 
 🌐 **Language / Ngôn ngữ / 语言 / Idioma:** [English](../README.md) | [Tiếng Việt](../vi/README.md) | [中文](../zh/README.md) | [Español](README.md)
 
-# Dominá Claude Code en un fin de semana
+# Domina Claude Code en un fin de semana
 
-Pasá de escribir `claude` a orquestar agentes, hooks, skills y servidores MCP — con tutoriales visuales, templates para copiar y pegar, y un camino de aprendizaje guiado.
+Pasa de escribir `claude` a orquestar agentes, hooks, skills y servidores MCP — con tutoriales visuales, templates para copiar y pegar, y un camino de aprendizaje guiado.
 
-**[Empezá en 15 minutos](#empezá-en-15-minutos)** | **[Encontrá tu nivel](#no-sabs-por-dnde-empezar)** | **[Explorá el Catálogo de Funcionalidades](CATALOG.md)**
+**[Empieza en 15 minutos](#empieza-en-15-minutos)** | **[Encuentra tu nivel](#no-sabes-por-dnde-empezar)** | **[Explora el Catálogo de Funcionalidades](CATALOG.md)**
 
 ---
 
@@ -30,9 +30,9 @@ Pasá de escribir `claude` a orquestar agentes, hooks, skills y servidores MCP �
 - [El Problema](#el-problema)
 - [Cómo lo resuelve Claude How To](#cmo-lo-resuelve-claude-how-to)
 - [Cómo funciona](#cmo-funciona)
-- [¿No sabés por dónde empezar?](#no-sabs-por-dnde-empezar)
-- [Empezá en 15 minutos](#empezá-en-15-minutos)
-- [¿Qué podés construir con esto?](#qu-pods-construir-con-esto)
+- [¿No sabes por dónde empezar?](#no-sabes-por-dnde-empezar)
+- [Empieza en 15 minutos](#empieza-en-15-minutos)
+- [¿Qué puedes construir con esto?](#qu-puedes-construir-con-esto)
 - [Preguntas frecuentes](#preguntas-frecuentes)
 - [Contribuciones](#contribuciones)
 - [Licencia](#licencia)
@@ -43,58 +43,58 @@ Pasá de escribir `claude` a orquestar agentes, hooks, skills y servidores MCP �
 
 Instalaste Claude Code. Ejecutaste algunos prompts. ¿Y ahora qué?
 
-- **La documentación oficial describe las funcionalidades, pero no te muestra cómo combinarlas.** Sabés que existen los slash commands, pero no cómo encadenarlos con hooks, memory y subagentes en un workflow que realmente te ahorre horas.
-- **No hay un camino de aprendizaje claro.** ¿Deberías aprender MCP antes que los hooks? ¿Skills antes que los subagentes? Terminás leyendo todo por encima y sin dominar nada.
+- **La documentación oficial describe las funcionalidades, pero no te muestra cómo combinarlas.** Sabes que existen los slash commands, pero no cómo encadenarlos con hooks, memory y subagentes en un workflow que realmente te ahorre horas.
+- **No hay un camino de aprendizaje claro.** ¿Deberías aprender MCP antes que los hooks? ¿Skills antes que los subagentes? Terminas leyendo todo por encima y sin dominar nada.
 - **Los ejemplos son demasiado básicos.** Un slash command "hola mundo" no te ayuda a construir un pipeline de revisión de código en producción que use memory, delegue a agentes especializados y ejecute escaneos de seguridad automáticamente.
 
-Estás dejando el 90% del poder de Claude Code sobre la mesa — y no sabés lo que no sabés.
+Estás dejando el 90% del poder de Claude Code sobre la mesa — y no sabes lo que no sabes.
 
 ---
 
 ## Cómo lo resuelve Claude How To
 
-Esto no es otra referencia de funcionalidades. Es una **guía estructurada, visual y orientada a ejemplos** que te enseña a usar cada funcionalidad de Claude Code con templates del mundo real que podés copiar a tu proyecto hoy mismo.
+Esto no es otra referencia de funcionalidades. Es una **guía estructurada, visual y orientada a ejemplos** que te enseña a usar cada funcionalidad de Claude Code con templates del mundo real que puedes copiar a tu proyecto hoy mismo.
 
 | | Documentación oficial | Esta guía |
 |--|---------------|------------|
 | **Formato** | Documentación de referencia | Tutoriales visuales con diagramas Mermaid |
 | **Profundidad** | Descripción de funcionalidades | Cómo funciona internamente |
-| **Ejemplos** | Snippets básicos | Templates listos para producción que usás de inmediato |
+| **Ejemplos** | Snippets básicos | Templates listos para producción que usas de inmediato |
 | **Estructura** | Organizada por funcionalidades | Camino de aprendizaje progresivo (principiante a avanzado) |
 | **Onboarding** | Autodirigido | Roadmap guiado con estimaciones de tiempo |
 | **Autoevaluación** | Ninguna | Quizzes interactivos para encontrar tus brechas y construir un camino personalizado |
 
-### Lo que obtenés:
+### Lo que obtienes:
 
 - **10 módulos de tutoriales** que cubren cada funcionalidad de Claude Code — desde slash commands hasta equipos de agentes personalizados
 - **Configs para copiar y pegar** — slash commands, templates de CLAUDE.md, scripts de hook, configs de MCP, definiciones de subagentes y bundles de plugins completos
 - **Diagramas Mermaid** que muestran cómo funciona cada funcionalidad internamente, para que entiendas el *por qué*, no solo el *cómo*
 - **Un camino de aprendizaje guiado** que te lleva de principiante a usuario avanzado en 11-13 horas
-- **Autoevaluación integrada** — ejecutá `/self-assessment` o `/lesson-quiz hooks` directamente en Claude Code para identificar tus brechas
+- **Autoevaluación integrada** — ejecuta `/self-assessment` o `/lesson-quiz hooks` directamente en Claude Code para identificar tus brechas
 
-**[Iniciá el Camino de Aprendizaje ->](LEARNING-ROADMAP.md)**
+**[Inicia el Camino de Aprendizaje ->](LEARNING-ROADMAP.md)**
 
 ---
 
 ## Cómo funciona
 
-### 1. Encontrá tu nivel
+### 1. Encuentra tu nivel
 
-Hacé el [quiz de autoevaluación](LEARNING-ROADMAP.md#-find-your-level) o ejecutá `/self-assessment` en Claude Code. Obtenés un roadmap personalizado basado en lo que ya sabés.
+Haz el [quiz de autoevaluación](LEARNING-ROADMAP.md#-find-your-level) o ejecuta `/self-assessment` en Claude Code. Obtienes un roadmap personalizado basado en lo que ya sabes.
 
-### 2. Seguí el camino guiado
+### 2. Sigue el camino guiado
 
-Trabajá los 10 módulos en orden — cada uno se apoya en el anterior. Copiá los templates directamente a tu proyecto mientras aprendés.
+Trabaja los 10 módulos en orden — cada uno se apoya en el anterior. Copia los templates directamente a tu proyecto mientras aprendes.
 
-### 3. Combiná funcionalidades en workflows
+### 3. Combina funcionalidades en workflows
 
-El verdadero poder está en combinar funcionalidades. Aprendé a conectar slash commands + memory + subagentes + hooks en pipelines automatizados que manejan revisiones de código, despliegues y generación de documentación.
+El verdadero poder está en combinar funcionalidades. Aprende a conectar slash commands + memory + subagentes + hooks en pipelines automatizados que manejan revisiones de código, despliegues y generación de documentación.
 
-### 4. Ponés a prueba tu comprensión
+### 4. Pones a prueba tu comprensión
 
-Ejecutá `/lesson-quiz [topic]` después de cada módulo. El quiz identifica lo que te faltó para que puedas cerrar brechas rápido.
+Ejecuta `/lesson-quiz [topic]` después de cada módulo. El quiz identifica lo que te faltó para que puedas cerrar brechas rápido.
 
-**[Empezá en 15 minutos](#empezá-en-15-minutos)**
+**[Empieza en 15 minutos](#empieza-en-15-minutos)**
 
 ---
 
@@ -109,11 +109,11 @@ Ejecutá `/lesson-quiz [topic]` después de cada módulo. El quiz identifica lo 
 
 ---
 
-## ¿No sabés por dónde empezar?
+## ¿No sabes por dónde empezar?
 
-Hacé la autoevaluación o elegí tu nivel:
+Haz la autoevaluación o elige tu nivel:
 
-| Nivel | Podés... | Empezá acá | Tiempo |
+| Nivel | Puedes... | Empieza aquí | Tiempo |
 |-------|-----------|------------|------|
 | **Principiante** | Iniciar Claude Code y chatear | [Slash Commands](../01-slash-commands/) | ~2,5 horas |
 | **Intermedio** | Usar CLAUDE.md y comandos personalizados | [Skills](../03-skills/) | ~3,5 horas |
@@ -138,7 +138,7 @@ Hacé la autoevaluación o elegí tu nivel:
 
 ---
 
-## Empezá en 15 minutos
+## Empieza en 15 minutos
 
 ```bash
 # 1. Cloná la guía
@@ -149,17 +149,17 @@ cd claude-howto
 mkdir -p /ruta/a/tu-proyecto/.claude/commands
 cp 01-slash-commands/optimize.md /ruta/a/tu-proyecto/.claude/commands/
 
-# 3. Probalo — en Claude Code, escribí:
+# 3. Pruébalo — en Claude Code, escribe:
 # /optimize
 
-# 4. ¿Querés más? Configurá la memory del proyecto:
+# 4. ¿Quieres más? Configura la memory del proyecto:
 cp 02-memory/project-CLAUDE.md /ruta/a/tu-proyecto/CLAUDE.md
 
 # 5. Instalá un skill:
 cp -r 03-skills/code-review ~/.claude/skills/
 ```
 
-¿Querés la configuración completa? Acá está la **configuración esencial de 1 hora**:
+¿Quieres la configuración completa? Aquí está la **configuración esencial de 1 hora**:
 
 ```bash
 # Slash commands (15 min)
@@ -175,13 +175,13 @@ cp -r 03-skills/code-review ~/.claude/skills/
 # Seguí el camino de aprendizaje para la configuración guiada
 ```
 
-**[Ver la Referencia de Instalación Completa](#empezá-en-15-minutos)**
+**[Ver la Referencia de Instalación Completa](#empieza-en-15-minutos)**
 
 ---
 
-## ¿Qué podés construir con esto?
+## ¿Qué puedes construir con esto?
 
-| Caso de uso | Funcionalidades que combinás |
+| Caso de uso | Funcionalidades que combinas |
 |----------|------------------------|
 | **Revisión de código automatizada** | Slash Commands + Subagentes + Memory + MCP |
 | **Onboarding de equipo** | Memory + Slash Commands + Plugins |
@@ -196,35 +196,35 @@ cp -r 03-skills/code-review ~/.claude/skills/
 ## Preguntas frecuentes
 
 **¿Es gratuito?**
-Sí. Licencia MIT, gratis para siempre. Usalo en proyectos personales, en el trabajo, en tu equipo — sin restricciones más allá de incluir el aviso de licencia.
+Sí. Licencia MIT, gratis para siempre. Úsalo en proyectos personales, en el trabajo, en tu equipo — sin restricciones más allá de incluir el aviso de licencia.
 
 **¿Está mantenido?**
 Activamente. La guía se sincroniza con cada release de Claude Code. Versión actual: v2.3.0 (abril 2026), compatible con Claude Code 2.1+.
 
 **¿En qué se diferencia de la documentación oficial?**
-La documentación oficial es una referencia de funcionalidades. Esta guía es un tutorial con diagramas, templates listos para producción y un camino de aprendizaje progresivo. Se complementan — empezá acá para aprender, consultá la documentación cuando necesités detalles específicos.
+La documentación oficial es una referencia de funcionalidades. Esta guía es un tutorial con diagramas, templates listos para producción y un camino de aprendizaje progresivo. Se complementan — empieza aquí para aprender, consulta la documentación cuando necesites detalles específicos.
 
 **¿Cuánto tiempo lleva recorrer todo?**
-11-13 horas para el camino completo. Pero obtenés valor inmediato en 15 minutos — solo copiá un template de slash command y probalo.
+11-13 horas para el camino completo. Pero obtienes valor inmediato en 15 minutos — solo copia un template de slash command y pruébalo.
 
 **¿Puedo usar esto con Claude Sonnet / Haiku / Opus?**
 Sí. Todos los templates funcionan con Claude Sonnet 4.6, Claude Opus 4.6 y Claude Haiku 4.5.
 
 **¿Puedo contribuir?**
-Por supuesto. Consultá [CONTRIBUTING.md](CONTRIBUTING.md) para las pautas. Damos la bienvenida a nuevos ejemplos, correcciones de bugs, mejoras a la documentación y templates de la comunidad.
+Por supuesto. Consulta [CONTRIBUTING.md](CONTRIBUTING.md) para las pautas. Damos la bienvenida a nuevos ejemplos, correcciones de bugs, mejoras a la documentación y templates de la comunidad.
 
 **¿Puedo leer esto sin conexión?**
-Sí. Ejecutá `uv run scripts/build_epub.py` para generar un ebook EPUB con todo el contenido y los diagramas renderizados.
+Sí. Ejecuta `uv run scripts/build_epub.py` para generar un ebook EPUB con todo el contenido y los diagramas renderizados.
 
 ---
 
-## Empezá a dominar Claude Code hoy
+## Empieza a dominar Claude Code hoy
 
-Ya tenés Claude Code instalado. Lo único que hay entre vos y una productividad 10x es saber cómo usarlo. Esta guía te da el camino estructurado, las explicaciones visuales y los templates para copiar y pegar que necesitás para llegar ahí.
+Ya tienes Claude Code instalado. Lo único que hay entre ti y una productividad 10x es saber cómo usarlo. Esta guía te da el camino estructurado, las explicaciones visuales y los templates para copiar y pegar que necesitas para llegar ahí.
 
-Licencia MIT. Gratis para siempre. Clonalo, forkéalo, hacelo tuyo.
+Licencia MIT. Gratis para siempre. Clónalo, forkéalo, hazlo tuyo.
 
-**[Iniciá el Camino de Aprendizaje ->](LEARNING-ROADMAP.md)** | **[Explorá el Catálogo de Funcionalidades](CATALOG.md)** | **[Empezá en 15 minutos](#empezá-en-15-minutos)**
+**[Inicia el Camino de Aprendizaje ->](LEARNING-ROADMAP.md)** | **[Explora el Catálogo de Funcionalidades](CATALOG.md)** | **[Empieza en 15 minutos](#empieza-en-15-minutos)**
 
 ---
 
@@ -462,7 +462,7 @@ cp 06-hooks/*.sh ~/.claude/hooks/
 chmod +x ~/.claude/hooks/*.sh
 ```
 
-Configurá los hooks en `~/.claude/settings.json`:
+Configura los hooks en `~/.claude/settings.json`:
 ```json
 {
   "hooks": {
@@ -507,7 +507,7 @@ Configurá los hooks en `~/.claude/settings.json`:
 /plugin install documentation
 ```
 
-**Uso**: Usá los slash commands y funcionalidades incluidas
+**Uso**: Usa los slash commands y funcionalidades incluidas
 
 </details>
 
@@ -526,10 +526,10 @@ Configurá los hooks en `~/.claude/settings.json`:
 **Uso**:
 ```
 # Los checkpoints se crean automáticamente con cada prompt del usuario
-# Para hacer rewind, presioná Esc dos veces o usá:
+# Para hacer rewind, presiona Esc dos veces o usa:
 /rewind
 
-# Luego elegí entre cinco opciones:
+# Luego elige entre cinco opciones:
 # 1. Restore code and conversation
 # 2. Restore conversation
 # 3. Restore code
@@ -717,19 +717,19 @@ Claude:
 <summary>Buenas prácticas</summary>
 
 ### Qué hacer
-- Empezá con lo simple: slash commands
-- Agregá funcionalidades de forma incremental
-- Usá memory para los estándares del equipo
-- Probá las configuraciones localmente primero
-- Documentá las implementaciones personalizadas
-- Versioná las configuraciones del proyecto
-- Compartí los plugins con el equipo
+- Empieza con lo simple: slash commands
+- Agrega funcionalidades de forma incremental
+- Usa memory para los estándares del equipo
+- Prueba las configuraciones localmente primero
+- Documenta las implementaciones personalizadas
+- Versiona las configuraciones del proyecto
+- Comparte los plugins con el equipo
 
 ### Qué no hacer
 - No crees funcionalidades redundantes
 - No guardes credenciales en el código
 - No omitas la documentación
-- No sobrecomplicá tareas simples
+- No sobreompliques tareas simples
 - No ignores las buenas prácticas de seguridad
 - No hagas commit de datos sensibles
 
@@ -739,22 +739,22 @@ Claude:
 <summary>Solución de problemas</summary>
 
 ### La funcionalidad no carga
-1. Verificá la ubicación y nombre del archivo
-2. Verificá la sintaxis del YAML frontmatter
-3. Comprobá los permisos del archivo
-4. Revisá la compatibilidad con la versión de Claude Code
+1. Verifica la ubicación y nombre del archivo
+2. Verifica la sintaxis del YAML frontmatter
+3. Comprueba los permisos del archivo
+4. Revisa la compatibilidad con la versión de Claude Code
 
 ### Fallo en la conexión MCP
-1. Verificá las variables de entorno
-2. Comprobá la instalación del servidor MCP
-3. Probá las credenciales
-4. Revisá la conectividad de red
+1. Verifica las variables de entorno
+2. Comprueba la instalación del servidor MCP
+3. Prueba las credenciales
+4. Revisa la conectividad de red
 
 ### El subagente no delega
-1. Comprobá los permisos de herramientas
-2. Verificá la claridad en la descripción del agente
-3. Revisá la complejidad de la tarea
-4. Probá el agente de forma independiente
+1. Comprueba los permisos de herramientas
+2. Verifica la claridad en la descripción del agente
+3. Revisa la complejidad de la tarea
+4. Prueba el agente de forma independiente
 
 </details>
 
@@ -798,7 +798,7 @@ Los tests se ejecutan automáticamente en cada push a `main`/`develop` y en cada
 <details>
 <summary>Generación de EPUB</summary>
 
-¿Querés leer esta guía sin conexión? Generá un ebook EPUB:
+¿Quieres leer esta guía sin conexión? Genera un ebook EPUB:
 
 ```bash
 uv run scripts/build_epub.py
@@ -813,9 +813,9 @@ Ver [scripts/README.md](scripts/README.md) para más opciones.
 <details>
 <summary>Contribuciones</summary>
 
-¿Encontraste un problema o querés contribuir con un ejemplo? ¡Tu ayuda es bienvenida!
+¿Encontraste un problema o quieres contribuir con un ejemplo? ¡Tu ayuda es bienvenida!
 
-**Por favor, leé [CONTRIBUTING.md](CONTRIBUTING.md) para obtener pautas detalladas sobre:**
+**Por favor, lee [CONTRIBUTING.md](CONTRIBUTING.md) para obtener pautas detalladas sobre:**
 - Tipos de contribuciones (ejemplos, docs, funcionalidades, bugs, feedback)
 - Cómo configurar tu entorno de desarrollo
 - Estructura de directorios y cómo agregar contenido
@@ -828,19 +828,19 @@ Ver [scripts/README.md](scripts/README.md) para más opciones.
 
 ### Reportar problemas de seguridad
 
-Si encontrás una vulnerabilidad de seguridad, por favor repórtala de forma responsable:
+Si encuentras una vulnerabilidad de seguridad, por favor repórtala de forma responsable:
 
-1. **Usá el reporte privado de vulnerabilidades de GitHub**: https://github.com/luongnv89/claude-howto/security/advisories
-2. **O leé** [.github/SECURITY_REPORTING.md](.github/SECURITY_REPORTING.md) para instrucciones detalladas
+1. **Usa el reporte privado de vulnerabilidades de GitHub**: https://github.com/luongnv89/claude-howto/security/advisories
+2. **O lee** [.github/SECURITY_REPORTING.md](.github/SECURITY_REPORTING.md) para instrucciones detalladas
 3. **No abras** un issue público para vulnerabilidades de seguridad
 
 Inicio rápido:
-1. Forkéalo y clonálo
-2. Creá una branch descriptiva (`add/feature-name`, `fix/bug`, `docs/improvement`)
-3. Realizá tus cambios siguiendo las pautas
-4. Enviá un pull request con una descripción clara
+1. Forkéalo y clónalo
+2. Crea una branch descriptiva (`add/feature-name`, `fix/bug`, `docs/improvement`)
+3. Realiza tus cambios siguiendo las pautas
+4. Envía un pull request con una descripción clara
 
-**¿Necesitás ayuda?** Abrí un issue o una discusión y te guiamos en el proceso.
+**¿Necesitas ayuda?** Abre un issue o una discusión y te guiamos en el proceso.
 
 </details>
 
@@ -859,7 +859,7 @@ Inicio rápido:
 
 ## Contribuciones
 
-¡Las contribuciones son bienvenidas! Por favor, consultá nuestra [Guía de Contribuciones](CONTRIBUTING.md) para saber cómo empezar.
+¡Las contribuciones son bienvenidas! Por favor, consulta nuestra [Guía de Contribuciones](CONTRIBUTING.md) para saber cómo empezar.
 
 ---
 

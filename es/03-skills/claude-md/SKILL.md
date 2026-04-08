@@ -21,11 +21,11 @@ $ARGUMENTS
 
 ### Las reglas de oro
 
-1. **Menos es más**: Los LLMs de frontera pueden seguir ~150-200 instrucciones. El system prompt de Claude Code ya usa ~50. Mantené tu CLAUDE.md enfocado y conciso.
+1. **Menos es más**: Los LLMs de frontera pueden seguir ~150-200 instrucciones. El system prompt de Claude Code ya usa ~50. Mantén tu CLAUDE.md enfocado y conciso.
 
-2. **Aplicabilidad universal**: Solo incluí información relevante para TODAS las sesiones. Las instrucciones específicas de tareas pertenecen a archivos separados.
+2. **Aplicabilidad universal**: Solo incluye información relevante para TODAS las sesiones. Las instrucciones específicas de tareas pertenecen a archivos separados.
 
-3. **No uses Claude como linter**: Las guías de estilo saturan el contexto y degradan el seguimiento de instrucciones. Usá herramientas deterministas (prettier, eslint, etc.) en su lugar.
+3. **No uses Claude como linter**: Las guías de estilo saturan el contexto y degradan el seguimiento de instrucciones. Usa herramientas deterministas (prettier, eslint, etc.) en su lugar.
 
 4. **Nunca lo generes automáticamente**: CLAUDE.md es el punto de mayor apalancamiento del harness de IA. Crealo manualmente con cuidado y reflexión.
 
@@ -33,9 +33,9 @@ $ARGUMENTS
 
 ### 1. Análisis del proyecto
 
-Primero, analizá el estado actual del proyecto:
+Primero, analiza el estado actual del proyecto:
 
-1. Verificá si existen archivos CLAUDE.md:
+1. Verifica si existen archivos CLAUDE.md:
    - Nivel raíz: `./CLAUDE.md` o `.claude/CLAUDE.md`
    - Específicos de directorio: `**/CLAUDE.md`
    - Configuración global del usuario: `~/.claude/CLAUDE.md`
@@ -82,12 +82,12 @@ agent_docs/
   |- architecture_decisions.md
 ```
 
-En CLAUDE.md, hacé referencia a estos archivos con instrucciones como:
+En CLAUDE.md, haz referencia a estos archivos con instrucciones como:
 ```markdown
 For detailed build instructions, refer to `agent_docs/building_the_project.md`
 ```
 
-**Importante**: Usá referencias `archivo:línea` en lugar de fragmentos de código para evitar contexto desactualizado.
+**Importante**: Usa referencias `archivo:línea` en lugar de fragmentos de código para evitar contexto desactualizado.
 
 ### 4. Restricciones de calidad
 
@@ -96,7 +96,7 @@ Al crear o actualizar CLAUDE.md:
 1. **Extensión objetivo**: Menos de 300 líneas (idealmente menos de 100)
 2. **Sin reglas de estilo**: Eliminá cualquier instrucción de linting/formato
 3. **Sin instrucciones específicas de tareas**: Movalas a archivos separados
-4. **Sin fragmentos de código**: Usá referencias a archivos en su lugar
+4. **Sin fragmentos de código**: Usa referencias a archivos en su lugar
 5. **Sin información redundante**: No repitas lo que ya está en package.json o README
 
 ### 5. Secciones esenciales
@@ -137,23 +137,23 @@ Brief one-line description.
 ### 6. Anti-patrones a evitar
 
 **NO incluyas:**
-- Guías de estilo de código (usá linters)
+- Guías de estilo de código (usa linters)
 - Documentación sobre cómo usar Claude
 - Explicaciones largas de patrones obvios
 - Ejemplos de código copiados y pegados
-- Buenas prácticas genéricas ("escribí código limpio")
+- Buenas prácticas genéricas ("escribe código limpio")
 - Instrucciones para tareas específicas
 - Contenido generado automáticamente
 - Listas de TODOs extensas
 
 ### 7. Lista de verificación de calidad
 
-Antes de finalizar, verificá:
+Antes de finalizar, verifica:
 
 - [ ] Menos de 300 líneas (preferiblemente menos de 100)
 - [ ] Cada línea aplica a TODAS las sesiones
 - [ ] Sin reglas de estilo/formato
-- [ ] Sin fragmentos de código (usá referencias a archivos)
+- [ ] Sin fragmentos de código (usa referencias a archivos)
 - [ ] Los comandos están verificados y funcionan
 - [ ] Se usa divulgación progresiva para proyectos complejos
 - [ ] Los gotchas críticos están documentados
@@ -170,24 +170,24 @@ Antes de finalizar, verificá:
 
 ### Para `update`:
 
-1. Leé el CLAUDE.md existente
-2. Auditá contra las mejores prácticas
+1. Lee el CLAUDE.md existente
+2. Audita contra las mejores prácticas
 3. Identificá:
    - Contenido a eliminar (reglas de estilo, fragmentos de código, específico de tareas)
    - Contenido a condensar
    - Información esencial faltante
-4. Presentá los cambios para revisión
-5. Aplicá los cambios después de la aprobación
+4. Presenta los cambios para revisión
+5. Aplica los cambios después de la aprobación
 
 ### Para `audit`:
 
-1. Leé el CLAUDE.md existente
-2. Generá un informe con:
+1. Lee el CLAUDE.md existente
+2. Genera un informe con:
    - Recuento de líneas actual vs objetivo
    - Porcentaje de contenido universalmente aplicable
    - Lista de anti-patrones encontrados
    - Recomendaciones de mejora
-3. NO modifiques el archivo, solo reportá
+3. NO modifiques el archivo, solo reporta
 
 ## Manejo de AGENTS.md
 
@@ -198,14 +198,14 @@ AGENTS.md se usa para definir comportamientos especializados de agentes. A difer
 - Instrucciones y restricciones específicas del agente
 - Definiciones de workflow para escenarios multi-agente
 
-Aplicá principios similares:
+Aplica principios similares:
 - Mantenerlo enfocado y conciso
-- Usá divulgación progresiva
-- Referenciá documentos externos en lugar de incrustar contenido
+- Usa divulgación progresiva
+- Referencia documentos externos en lugar de incrustar contenido
 
 ## Notas
 
-- Siempre verificá que los comandos funcionen antes de incluirlos
+- Siempre verifica que los comandos funcionen antes de incluirlos
 - Ante la duda, dejalo afuera: menos es más
 - El system reminder le dice a Claude que CLAUDE.md "puede o no ser relevante" — cuanto más ruido, más se ignora
 - Los monorepos se benefician más de una estructura clara de QUÉ/POR QUÉ/CÓMO

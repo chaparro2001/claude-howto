@@ -5,13 +5,13 @@
 
 # Roadmap de Aprendizaje de Claude Code
 
-**¿Sos nuevo en Claude Code?** Esta guía te ayuda a dominar las funcionalidades de Claude Code a tu propio ritmo. Tanto si sos un principiante completo como un desarrollador con experiencia, empezá con el quiz de autoevaluación de abajo para encontrar el camino correcto para vos.
+**¿Eres nuevo en Claude Code?** Esta guía te ayuda a dominar las funcionalidades de Claude Code a tu propio ritmo. Tanto si eres un principiante completo como un desarrollador con experiencia, empieza con el quiz de autoevaluación de abajo para encontrar el camino correcto para ti.
 
 ---
 
-## Encontrá tu nivel
+## Encuentra tu nivel
 
-No todo el mundo empieza desde el mismo lugar. Hacé esta autoevaluación rápida para encontrar el punto de entrada correcto.
+No todo el mundo empieza desde el mismo lugar. Haz esta autoevaluación rápida para encontrar el punto de entrada correcto.
 
 **Respondé estas preguntas con honestidad:**
 
@@ -26,15 +26,15 @@ No todo el mundo empieza desde el mismo lugar. Hacé esta autoevaluación rápid
 
 **Tu nivel:**
 
-| Respuestas | Nivel | Empezá acá | Tiempo para completar |
+| Respuestas | Nivel | Empieza aquí | Tiempo para completar |
 |--------|-------|----------|------------------|
 | 0-2 | **Nivel 1: Principiante** — Empezando | [Milestone 1A](#milestone-1a-primeros-comandos-y-memory) | ~3 horas |
 | 3-5 | **Nivel 2: Intermedio** — Construyendo Workflows | [Milestone 2A](#milestone-2a-automatizacin-skills--hooks) | ~5 horas |
 | 6-8 | **Nivel 3: Avanzado** — Usuario Experto y Líder de Equipo | [Milestone 3A](#milestone-3a-funcionalidades-avanzadas) | ~5 horas |
 
-> **Consejo**: Si no estás seguro, empezá un nivel más abajo. Es mejor repasar material conocido rápido que saltarse conceptos fundamentales.
+> **Consejo**: Si no estás seguro, empieza un nivel más abajo. Es mejor repasar material conocido rápido que saltarse conceptos fundamentales.
 
-> **Versión interactiva**: Ejecutá `/self-assessment` en Claude Code para un quiz guiado e interactivo que evalúa tu nivel en las 10 áreas de funcionalidades y genera un camino de aprendizaje personalizado.
+> **Versión interactiva**: Ejecuta `/self-assessment` en Claude Code para un quiz guiado e interactivo que evalúa tu nivel en las 10 áreas de funcionalidades y genera un camino de aprendizaje personalizado.
 
 ---
 
@@ -46,7 +46,7 @@ Las carpetas de este repositorio están numeradas en el **orden de aprendizaje r
 2. **Complejidad** — Las funcionalidades más simples antes que las avanzadas
 3. **Frecuencia de uso** — Las funcionalidades más comunes se enseñan temprano
 
-Este enfoque garantiza que construyas una base sólida mientras obtenés beneficios inmediatos de productividad.
+Este enfoque garantiza que construyas una base sólida mientras obtienes beneficios inmediatos de productividad.
 
 ---
 
@@ -109,7 +109,7 @@ graph TD
 | **10** | [Plugins](../07-plugins/) | ⭐⭐⭐⭐ Avanzado | 2 horas | Nivel 3 | Todos los anteriores | Soluciones completas | Onboarding del equipo, distribución |
 | **11** | [CLI Avanzado](../10-cli/) | ⭐⭐⭐ Avanzado | 1 hora | Nivel 3 | Recomendado: Todos | Dominar el uso de línea de comandos | Scripting, CI/CD, automatización |
 
-**Tiempo total de aprendizaje**: ~11-13 horas (o saltá a tu nivel y ahorrá tiempo)
+**Tiempo total de aprendizaje**: ~11-13 horas (o salta a tu nivel y ahorra tiempo)
 
 ---
 
@@ -144,20 +144,20 @@ cp 01-slash-commands/optimize.md .claude/commands/
 cp 02-memory/project-CLAUDE.md ./CLAUDE.md
 
 # Ejercicio 3: Probarlo
-# En Claude Code, escribí: /optimize
+# En Claude Code, escribe: /optimize
 ```
 
 #### Criterios de éxito
 - [ ] Invocar exitosamente el comando `/optimize`
 - [ ] Claude recuerda los estándares del proyecto desde CLAUDE.md
-- [ ] Entendés cuándo usar slash commands vs. memory
+- [ ] Entiendes cuándo usar slash commands vs. memory
 
 #### Próximos pasos
-Una vez que te sientas cómodo, leé:
+Una vez que te sientas cómodo, lee:
 - [01-slash-commands/README.md](../01-slash-commands/README.md)
 - [02-memory/README.md](../02-memory/README.md)
 
-> **Comprobá tu comprensión**: Ejecutá `/lesson-quiz slash-commands` o `/lesson-quiz memory` en Claude Code para probar lo que aprendiste.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz slash-commands` o `/lesson-quiz memory` en Claude Code para probar lo que aprendiste.
 
 ---
 
@@ -179,7 +179,7 @@ Una vez que te sientas cómodo, leé:
 ```bash
 # Ejercicio 1: Probar el workflow de checkpoints
 # En Claude Code:
-# Hacé algunos cambios experimentales, luego presioná Esc+Esc o usá /rewind
+# Haz algunos cambios experimentales, luego presiona Esc+Esc o usa /rewind
 # Seleccioná el checkpoint anterior a tu experimento
 # Elegí "Restore code and conversation" para volver
 
@@ -195,14 +195,14 @@ cat error.log | claude -p "explain this error"
 - [ ] Creaste y volviste a un checkpoint
 - [ ] Usaste tanto el modo interactivo como el print
 - [ ] Le pasaste un archivo a Claude para análisis
-- [ ] Entendés cuándo usar checkpoints para experimentación segura
+- [ ] Entiendes cuándo usar checkpoints para experimentación segura
 
 #### Próximos pasos
 - Leer: [08-checkpoints/README.md](../08-checkpoints/README.md)
 - Leer: [10-cli/README.md](../10-cli/README.md)
-- **¡Listo para el Nivel 2!** Continuá con el [Milestone 2A](#milestone-2a-automatizacin-skills--hooks)
+- **¡Listo para el Nivel 2!** Continúa con el [Milestone 2A](#milestone-2a-automatizacin-skills--hooks)
 
-> **Comprobá tu comprensión**: Ejecutá `/lesson-quiz checkpoints` o `/lesson-quiz cli` para verificar que estás listo para el Nivel 2.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz checkpoints` o `/lesson-quiz cli` para verificar que estás listo para el Nivel 2.
 
 ---
 
@@ -215,14 +215,14 @@ cat error.log | claude -p "explain this error"
 
 ### Verificación de prerequisitos
 
-Antes de empezar el Nivel 2, asegurate de estar cómodo con estos conceptos del Nivel 1:
+Antes de empezar el Nivel 2, asegúrate de estar cómodo con estos conceptos del Nivel 1:
 
-- [ ] Podés crear y usar slash commands ([01-slash-commands/](../01-slash-commands/))
+- [ ] Puedes crear y usar slash commands ([01-slash-commands/](../01-slash-commands/))
 - [ ] Configuraste la project memory via CLAUDE.md ([02-memory/](../02-memory/))
-- [ ] Sabés cómo crear y restaurar checkpoints ([08-checkpoints/](../08-checkpoints/))
-- [ ] Podés usar `claude` y `claude -p` desde la línea de comandos ([10-cli/](../10-cli/))
+- [ ] Sabes cómo crear y restaurar checkpoints ([08-checkpoints/](../08-checkpoints/))
+- [ ] Puedes usar `claude` y `claude -p` desde la línea de comandos ([10-cli/](../10-cli/))
 
-> **¿Tenés brechas?** Revisá los tutoriales enlazados arriba antes de continuar.
+> **¿Tienes brechas?** Revisa los tutoriales enlazados arriba antes de continuar.
 
 ---
 
@@ -273,15 +273,15 @@ chmod +x ~/.claude/hooks/pre-tool-check.sh
 #### Criterios de éxito
 - [ ] El skill de code review se invoca automáticamente cuando es relevante
 - [ ] El hook PreToolUse corre antes de la ejecución de herramientas
-- [ ] Entendés la invocación automática de skills vs. los disparadores de eventos de hook
+- [ ] Entiendes la invocación automática de skills vs. los disparadores de eventos de hook
 
 #### Próximos pasos
-- Creá tu propio skill personalizado
-- Configurá hooks adicionales para tu workflow
+- Crea tu propio skill personalizado
+- Configura hooks adicionales para tu workflow
 - Leer: [03-skills/README.md](../03-skills/README.md)
 - Leer: [06-hooks/README.md](../06-hooks/README.md)
 
-> **Comprobá tu comprensión**: Ejecutá `/lesson-quiz skills` o `/lesson-quiz hooks` para probar tu conocimiento antes de continuar.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz skills` o `/lesson-quiz hooks` para probar tu conocimiento antes de continuar.
 
 ---
 
@@ -314,25 +314,25 @@ cp 04-subagents/*.md .claude/agents/
 ```
 
 #### Ejercicio de integración
-Probá este workflow completo:
-1. Usá MCP para obtener un PR de GitHub
-2. Dejá que Claude delegue la revisión al subagente code-reviewer
-3. Usá hooks para ejecutar tests automáticamente
+Prueba este workflow completo:
+1. Usa MCP para obtener un PR de GitHub
+2. Deja que Claude delegue la revisión al subagente code-reviewer
+3. Usa hooks para ejecutar tests automáticamente
 
 #### Criterios de éxito
 - [ ] Consultaste exitosamente datos de GitHub via MCP
 - [ ] Claude delega tareas complejas a los subagentes
-- [ ] Entendés la diferencia entre MCP y subagentes
+- [ ] Entiendes la diferencia entre MCP y subagentes
 - [ ] Combinaste MCP + subagentes + hooks en un workflow
 
 #### Próximos pasos
-- Configurá servidores MCP adicionales (base de datos, Slack, etc.)
-- Creá subagentes personalizados para tu dominio
+- Configura servidores MCP adicionales (base de datos, Slack, etc.)
+- Crea subagentes personalizados para tu dominio
 - Leer: [05-mcp/README.md](../05-mcp/README.md)
 - Leer: [04-subagents/README.md](../04-subagents/README.md)
-- **¡Listo para el Nivel 3!** Continuá con el [Milestone 3A](#milestone-3a-funcionalidades-avanzadas)
+- **¡Listo para el Nivel 3!** Continúa con el [Milestone 3A](#milestone-3a-funcionalidades-avanzadas)
 
-> **Comprobá tu comprensión**: Ejecutá `/lesson-quiz mcp` o `/lesson-quiz subagents` para verificar que estás listo para el Nivel 3.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz mcp` o `/lesson-quiz subagents` para verificar que estás listo para el Nivel 3.
 
 ---
 
@@ -345,14 +345,14 @@ Probá este workflow completo:
 
 ### Verificación de prerequisitos
 
-Antes de empezar el Nivel 3, asegurate de estar cómodo con estos conceptos del Nivel 2:
+Antes de empezar el Nivel 3, asegúrate de estar cómodo con estos conceptos del Nivel 2:
 
-- [ ] Podés crear y usar skills con invocación automática ([03-skills/](../03-skills/))
+- [ ] Puedes crear y usar skills con invocación automática ([03-skills/](../03-skills/))
 - [ ] Configuraste hooks para automatización basada en eventos ([06-hooks/](../06-hooks/))
-- [ ] Podés configurar servidores MCP para datos externos ([05-mcp/](../05-mcp/))
-- [ ] Sabés cómo usar subagentes para delegación de tareas ([04-subagents/](../04-subagents/))
+- [ ] Puedes configurar servidores MCP para datos externos ([05-mcp/](../05-mcp/))
+- [ ] Sabes cómo usar subagentes para delegación de tareas ([04-subagents/](../04-subagents/))
 
-> **¿Tenés brechas?** Revisá los tutoriales enlazados arriba antes de continuar.
+> **¿Tienes brechas?** Revisa los tutoriales enlazados arriba antes de continuar.
 
 ---
 
@@ -423,14 +423,14 @@ export CLAUDE_AGENT_TEAMS=1
 - [ ] Usaste tareas en segundo plano para operaciones largas
 - [ ] Exploraste Channels para workflows multi-sesión
 - [ ] Probaste Voice Dictation para entrada manos libres
-- [ ] Entendés Remote Control, Desktop App y sesiones Web
+- [ ] Entiendes Remote Control, Desktop App y sesiones Web
 - [ ] Activaste y usaste Agent Teams para tareas colaborativas
 - [ ] Usaste `/loop` para tareas recurrentes o monitoreo programado
 
 #### Próximos pasos
 - Leer: [09-advanced-features/README.md](../09-advanced-features/README.md)
 
-> **Comprobá tu comprensión**: Ejecutá `/lesson-quiz advanced` para probar tu dominio de las funcionalidades de usuario experto.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz advanced` para probar tu dominio de las funcionalidades de usuario experto.
 
 ---
 
@@ -473,11 +473,11 @@ done
 ```
 
 #### Ejercicio de integración CI/CD
-Creá un script CI/CD simple:
-1. Usá `claude -p` para revisar archivos modificados
-2. Exportá los resultados como JSON
-3. Procesalos con `jq` para buscar problemas específicos
-4. Integrálos en un workflow de GitHub Actions
+Crea un script CI/CD simple:
+1. Usa `claude -p` para revisar archivos modificados
+2. Exporta los resultados como JSON
+3. Procésalos con `jq` para buscar problemas específicos
+4. Intégralos en un workflow de GitHub Actions
 
 #### Criterios de éxito
 - [ ] Instalaste y usaste un plugin
@@ -502,18 +502,18 @@ Creá un script CI/CD simple:
 - Crear atajos CLI y plugins para todo el equipo
 - Configurar scripts de procesamiento por lotes
 
-> **Comprobá tu comprensión**: Ejecutá `/lesson-quiz plugins` o `/lesson-quiz cli` para confirmar tu dominio.
+> **Comprueba tu comprensión**: Ejecuta `/lesson-quiz plugins` o `/lesson-quiz cli` para confirmar tu dominio.
 
 ---
 
 ## Poné a prueba tu conocimiento
 
-Este repositorio incluye dos skills interactivos que podés usar en cualquier momento en Claude Code para evaluar tu comprensión:
+Este repositorio incluye dos skills interactivos que puedes usar en cualquier momento en Claude Code para evaluar tu comprensión:
 
 | Skill | Comando | Propósito |
 |-------|---------|---------|
-| **Self-Assessment** | `/self-assessment` | Evalúa tu nivel general en las 10 funcionalidades. Elegí el modo Rápido (2 min) o Profundo (5 min) para obtener un perfil de habilidades personalizado y un camino de aprendizaje. |
-| **Lesson Quiz** | `/lesson-quiz [lesson]` | Ponés a prueba tu comprensión de una lección específica con 10 preguntas. Usalo antes de una lección (pre-test), durante (verificación de progreso) o después (verificación de dominio). |
+| **Self-Assessment** | `/self-assessment` | Evalúa tu nivel general en las 10 funcionalidades. Elige el modo Rápido (2 min) o Profundo (5 min) para obtener un perfil de habilidades personalizado y un camino de aprendizaje. |
+| **Lesson Quiz** | `/lesson-quiz [lesson]` | Pones a prueba tu comprensión de una lección específica con 10 preguntas. Úsalo antes de una lección (pre-test), durante (verificación de progreso) o después (verificación de dominio). |
 
 **Ejemplos:**
 ```
@@ -527,30 +527,30 @@ Este repositorio incluye dos skills interactivos que podés usar en cualquier mo
 
 ## Caminos de inicio rápido
 
-### Si solo tenés 15 minutos
+### Si solo tienes 15 minutos
 **Objetivo**: Obtener tu primera victoria
 
-1. Copiá un slash command: `cp 01-slash-commands/optimize.md .claude/commands/`
-2. Probálo en Claude Code: `/optimize`
+1. Copia un slash command: `cp 01-slash-commands/optimize.md .claude/commands/`
+2. Pruébalo en Claude Code: `/optimize`
 3. Leer: [01-slash-commands/README.md](../01-slash-commands/README.md)
 
 **Resultado**: Tendrás un slash command funcionando y entenderás los conceptos básicos
 
 ---
 
-### Si tenés 1 hora
+### Si tienes 1 hora
 **Objetivo**: Configurar las herramientas de productividad esenciales
 
-1. **Slash commands** (15 min): Copiá y probá `/optimize` y `/pr`
-2. **Project memory** (15 min): Creá CLAUDE.md con los estándares de tu proyecto
-3. **Instalar un skill** (15 min): Configurá el skill code-review
-4. **Probálos juntos** (15 min): Verás cómo funcionan en armonía
+1. **Slash commands** (15 min): Copia y prueba `/optimize` y `/pr`
+2. **Project memory** (15 min): Crea CLAUDE.md con los estándares de tu proyecto
+3. **Instalar un skill** (15 min): Configura el skill code-review
+4. **Pruébalos juntos** (15 min): Verás cómo funcionan en armonía
 
 **Resultado**: Impulso básico de productividad con comandos, memory y skills automáticos
 
 ---
 
-### Si tenés un fin de semana
+### Si tienes un fin de semana
 **Objetivo**: Dominar la mayoría de las funcionalidades
 
 **Sábado por la mañana** (3 horas):
@@ -574,58 +574,58 @@ Este repositorio incluye dos skills interactivos que podés usar en cualquier mo
 
 ### Qué hacer
 
-- **Hacé el quiz primero** para encontrar tu punto de partida
-- **Completá los ejercicios prácticos** de cada milestone
-- **Empezá con lo simple** y agregá complejidad gradualmente
-- **Probá cada funcionalidad** antes de pasar a la siguiente
-- **Tomá notas** sobre lo que funciona para tu workflow
-- **Volvé** a los conceptos anteriores mientras aprendés temas avanzados
-- **Experimentá con seguridad** usando checkpoints
-- **Compartí el conocimiento** con tu equipo
+- **Haz el quiz primero** para encontrar tu punto de partida
+- **Completa los ejercicios prácticos** de cada milestone
+- **Empieza con lo simple** y agrega complejidad gradualmente
+- **Prueba cada funcionalidad** antes de pasar a la siguiente
+- **Toma notas** sobre lo que funciona para tu workflow
+- **Vuelve** a los conceptos anteriores mientras aprendes temas avanzados
+- **Experimenta con seguridad** usando checkpoints
+- **Comparte el conocimiento** con tu equipo
 
 ### Qué no hacer
 
 - **No te saltes la verificación de prerequisitos** al pasar a un nivel más alto
-- **No intentés aprender todo a la vez** — es abrumador
-- **No copiés configuraciones sin entenderlas** — no sabrás cómo depurarlas
-- **No olvides probar** — siempre verificá que las funcionalidades funcionen
-- **No te apures por los milestones** — tomáte el tiempo para entender
+- **No intentes aprender todo a la vez** — es abrumador
+- **No copies configuraciones sin entenderlas** — no sabrás cómo depurarlas
+- **No olvides probar** — siempre verifica que las funcionalidades funcionen
+- **No te apures por los milestones** — tómate el tiempo para entender
 - **No ignores la documentación** — cada README tiene detalles valiosos
-- **No trabajes en aislamiento** — discutí con los compañeros de equipo
+- **No trabajes en aislamiento** — discute con los compañeros de equipo
 
 ---
 
 ## Estilos de aprendizaje
 
 ### Aprendices visuales
-- Estudiá los diagramas Mermaid en cada README
-- Observá el flujo de ejecución de los comandos
-- Dibujá tus propios diagramas de workflow
-- Usá el camino de aprendizaje visual de arriba
+- Estudia los diagramas Mermaid en cada README
+- Observa el flujo de ejecución de los comandos
+- Dibuja tus propios diagramas de workflow
+- Usa el camino de aprendizaje visual de arriba
 
 ### Aprendices prácticos
-- Completá cada ejercicio práctico
-- Experimentá con variaciones
-- Rompé cosas y arreglálas (¡usá checkpoints!)
-- Creá tus propios ejemplos
+- Completa cada ejercicio práctico
+- Experimenta con variaciones
+- Rompe cosas y arreglarlas (¡usa checkpoints!)
+- Crea tus propios ejemplos
 
 ### Aprendices lectores
-- Leé cada README detenidamente
-- Estudiá los ejemplos de código
-- Revisá las tablas comparativas
-- Leé los blog posts enlazados en los recursos
+- Lee cada README detenidamente
+- Estudia los ejemplos de código
+- Revisa las tablas comparativas
+- Lee los blog posts enlazados en los recursos
 
 ### Aprendices sociales
-- Organizá sesiones de pair programming
-- Enseñá conceptos a los compañeros de equipo
-- Unite a las discusiones de la comunidad de Claude Code
-- Compartí tus configuraciones personalizadas
+- Organiza sesiones de pair programming
+- Enseña conceptos a los compañeros de equipo
+- Únete a las discusiones de la comunidad de Claude Code
+- Comparte tus configuraciones personalizadas
 
 ---
 
 ## Seguimiento del progreso
 
-Usá estas listas de verificación para hacer seguimiento de tu progreso por nivel. Ejecutá `/self-assessment` en cualquier momento para obtener un perfil de habilidades actualizado, o `/lesson-quiz [lesson]` después de cada tutorial para verificar tu comprensión.
+Usa estas listas de verificación para hacer seguimiento de tu progreso por nivel. Ejecuta `/self-assessment` en cualquier momento para obtener un perfil de habilidades actualizado, o `/lesson-quiz [lesson]` después de cada tutorial para verificar tu comprensión.
 
 ### Nivel 1: Principiante
 - [ ] Completado [01-slash-commands](../01-slash-commands/)
@@ -673,22 +673,22 @@ Usá estas listas de verificación para hacer seguimiento de tu progreso por niv
 ## Desafíos comunes de aprendizaje
 
 ### Desafío 1: "Demasiados conceptos a la vez"
-**Solución**: Enfocáte en un milestone a la vez. Completá todos los ejercicios antes de avanzar.
+**Solución**: Enfócate en un milestone a la vez. Completa todos los ejercicios antes de avanzar.
 
 ### Desafío 2: "No sé qué funcionalidad usar cuándo"
-**Solución**: Consultá la [Matriz de casos de uso](ROOT-README.md#qu-pods-construir-con-esto) en el README principal.
+**Solución**: Consulta la [Matriz de casos de uso](ROOT-README.md#qu-puedes-construir-con-esto) en el README principal.
 
 ### Desafío 3: "La configuración no funciona"
-**Solución**: Revisá la sección de [Solución de problemas](ROOT-README.md#solucin-de-problemas) y verificá las ubicaciones de los archivos.
+**Solución**: Revisa la sección de [Solución de problemas](ROOT-README.md#solucin-de-problemas) y verifica las ubicaciones de los archivos.
 
 ### Desafío 4: "Los conceptos parecen superponerse"
-**Solución**: Revisá la tabla de [Comparación de funcionalidades](ROOT-README.md#comparacin-de-funcionalidades) para entender las diferencias.
+**Solución**: Revisa la tabla de [Comparación de funcionalidades](ROOT-README.md#comparacin-de-funcionalidades) para entender las diferencias.
 
 ### Desafío 5: "Es difícil recordar todo"
-**Solución**: Creá tu propia hoja de referencia. Usá checkpoints para experimentar con seguridad.
+**Solución**: Crea tu propia hoja de referencia. Usa checkpoints para experimentar con seguridad.
 
 ### Desafío 6: "Tengo experiencia pero no sé por dónde empezar"
-**Solución**: Hacé el [Quiz de autoevaluación](#encontrá-tu-nivel) de arriba. Saltá a tu nivel y usá la verificación de prerequisitos para identificar brechas.
+**Solución**: Haz el [Quiz de autoevaluación](#encuentra-tu-nivel) de arriba. Salta a tu nivel y usa la verificación de prerequisitos para identificar brechas.
 
 ---
 
@@ -696,21 +696,21 @@ Usá estas listas de verificación para hacer seguimiento de tu progreso por niv
 
 Una vez que hayas completado todos los milestones:
 
-1. **Creá documentación del equipo** — Documentá la configuración de Claude Code de tu equipo
-2. **Construí plugins personalizados** — Empaquetá los workflows de tu equipo
-3. **Explorá Remote Control** — Controlá sesiones de Claude Code programáticamente desde herramientas externas
-4. **Probá Web Sessions** — Usá Claude Code a través de interfaces basadas en navegador para desarrollo remoto
-5. **Usá la Desktop App** — Accedé a las funcionalidades de Claude Code a través de la aplicación desktop nativa
-6. **Usá Auto Mode** — Dejá que Claude trabaje autónomamente con un clasificador de seguridad en segundo plano
-7. **Aprovechá Auto Memory** — Dejá que Claude aprenda tus preferencias automáticamente con el tiempo
-8. **Configurá Agent Teams** — Coordiná múltiples agentes en tareas complejas y multifacéticas
-9. **Usá Channels** — Organizá el trabajo a través de workflows multi-sesión estructurados
-10. **Probá Voice Dictation** — Usá entrada de voz manos libres para interactuar con Claude Code
-11. **Usá Scheduled Tasks** — Automatizá verificaciones recurrentes con `/loop` y herramientas cron
-12. **Contribuí con ejemplos** — Compartilos con la comunidad
-13. **Mentoreá a otros** — Ayudá a los compañeros de equipo a aprender
-14. **Optimizá los workflows** — Mejorá continuamente basándote en el uso
-15. **Mantenete actualizado** — Seguí los releases y nuevas funcionalidades de Claude Code
+1. **Crea documentación del equipo** — Documenta la configuración de Claude Code de tu equipo
+2. **Construye plugins personalizados** — Empaqueta los workflows de tu equipo
+3. **Explora Remote Control** — Controla sesiones de Claude Code programáticamente desde herramientas externas
+4. **Prueba Web Sessions** — Usa Claude Code a través de interfaces basadas en navegador para desarrollo remoto
+5. **Usa la Desktop App** — Accede a las funcionalidades de Claude Code a través de la aplicación desktop nativa
+6. **Usa Auto Mode** — Deja que Claude trabaje autónomamente con un clasificador de seguridad en segundo plano
+7. **Aprovecha Auto Memory** — Deja que Claude aprenda tus preferencias automáticamente con el tiempo
+8. **Configura Agent Teams** — Coordina múltiples agentes en tareas complejas y multifacéticas
+9. **Usa Channels** — Organiza el trabajo a través de workflows multi-sesión estructurados
+10. **Prueba Voice Dictation** — Usa entrada de voz manos libres para interactuar con Claude Code
+11. **Usa Scheduled Tasks** — Automatiza verificaciones recurrentes con `/loop` y herramientas cron
+12. **Contribuye con ejemplos** — Compártelos con la comunidad
+13. **Mentoriza a otros** — Ayuda a los compañeros de equipo a aprender
+14. **Optimiza los workflows** — Mejora continuamente basándote en el uso
+15. **Mantente actualizado** — Sigue los releases y nuevas funcionalidades de Claude Code
 
 ---
 
@@ -732,9 +732,9 @@ Una vez que hayas completado todos los milestones:
 
 ## Feedback y soporte
 
-- **¿Encontraste un problema?** Creá un issue en el repositorio
-- **¿Tenés una sugerencia?** Enviá un pull request
-- **¿Necesitás ayuda?** Consultá la documentación o preguntá a la comunidad
+- **¿Encontraste un problema?** Crea un issue en el repositorio
+- **¿Tienes una sugerencia?** Envía un pull request
+- **¿Necesitas ayuda?** Consulta la documentación o pregunta a la comunidad
 
 ---
 

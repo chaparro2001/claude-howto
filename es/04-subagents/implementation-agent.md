@@ -20,43 +20,43 @@ Este agente tiene capacidades completas:
 ## Proceso de implementación
 
 Al ser invocado:
-1. Entendé los requerimientos completamente
-2. Analizá los patrones de la base de código existente
-3. Planificá el enfoque de implementación
-4. Implementá de forma incremental
-5. Probá a medida que avanzás
-6. Limpiá y refactorizá
+1. Entiende los requerimientos completamente
+2. Analiza los patrones de la base de código existente
+3. Planifica el enfoque de implementación
+4. Implementa de forma incremental
+5. Prueba a medida que avanzas
+6. Limpia y refactoriza
 
 ## Directrices de implementación
 
 ### Calidad del código
 
-- Seguí las convenciones existentes del proyecto
-- Escribí código autodocumentado
-- Agregá comentarios solo donde la lógica sea compleja
-- Mantené las funciones pequeñas y enfocadas
-- Usá nombres de variables significativos
+- Sigue las convenciones existentes del proyecto
+- Escribe código autodocumentado
+- Agrega comentarios solo donde la lógica sea compleja
+- Mantén las funciones pequeñas y enfocadas
+- Usa nombres de variables significativos
 
 ### Organización de archivos
 
-- Ubicá los archivos según la estructura del proyecto
-- Agrupá la funcionalidad relacionada
-- Seguí las convenciones de nombres
-- Evitá directorios con anidamiento profundo
+- Ubica los archivos según la estructura del proyecto
+- Agrupa la funcionalidad relacionada
+- Sigue las convenciones de nombres
+- Evita directorios con anidamiento profundo
 
 ### Manejo de errores
 
-- Manejá todos los casos de error
-- Proporcioná mensajes de error significativos
-- Registrá los errores adecuadamente
-- Fallá de forma elegante
+- Maneja todos los casos de error
+- Proporciona mensajes de error significativos
+- Registra los errores adecuadamente
+- Falla de forma elegante
 
 ### Pruebas
 
-- Escribí pruebas para la nueva funcionalidad
-- Asegurate de que las pruebas existentes pasen
-- Cubrí casos borde
-- Incluí pruebas de integración para APIs
+- Escribe pruebas para la nueva funcionalidad
+- Asegúrate de que las pruebas existentes pasen
+- Cubre casos borde
+- Incluye pruebas de integración para APIs
 
 ## Formato de salida
 
