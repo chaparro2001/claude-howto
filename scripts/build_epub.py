@@ -115,6 +115,8 @@ class EPUBConfig:
     en_subtitle: str = "Master Claude Code in a Weekend"
     zh_title: str = "Claude Code 使用指南"
     zh_subtitle: str = "一个周末掌握 Claude Code"
+    es_title: str = "Guía Práctica de Claude Code"
+    es_subtitle: str = "Domina Claude Code en un fin de semana"
 
     # Cover Settings
     cover_width: int = 600
@@ -1059,10 +1061,10 @@ def main() -> int:
         "--lang",
         type=str,
         default="en",
-        choices=["en", "vi", "zh"],
+        choices=["en", "vi", "zh", "es"],
         help=(
             "Language code: 'en' for English, 'vi' for Vietnamese, "
-            "'zh' for Chinese (default: en)"
+            "'zh' for Chinese, 'es' for Spanish (default: en)"
         ),
     )
     parser.add_argument(
@@ -1084,6 +1086,7 @@ def main() -> int:
         "en": (repo_root, "claude-howto-guide.epub", EPUBConfig.en_title),
         "vi": (repo_root / "vi", "claude-howto-guide-vi.epub", EPUBConfig.vi_title),
         "zh": (repo_root / "zh", "claude-howto-guide-zh.epub", EPUBConfig.zh_title),
+        "es": (repo_root / "es", "claude-howto-guide-es.epub", EPUBConfig.es_title),
     }
     root, default_output_name, title = lang_map[args.lang]
     output = args.output or (repo_root / default_output_name)

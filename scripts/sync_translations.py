@@ -1,75 +1,82 @@
 #!/usr/bin/env python3
 """
-Detect outdated Vietnamese translations compared to English version.
+Detect outdated translations compared to English version.
 
-This script compares modification times between English and Vietnamese
+This script compares modification times between English and translated
 documentation files to identify which translations need updating.
 
 Usage:
     python scripts/sync_translations.py
-    python scripts/sync_translations.py --verbose
+    python scripts/sync_translations.py --lang es
+    python scripts/sync_translations.py --lang vi --verbose
 """
 
 import argparse
 from datetime import datetime
 from pathlib import Path
 
+SUPPORTED_LANGS = ["vi", "zh", "es"]
+LANG_NAMES = {"vi": "Vietnamese", "zh": "Chinese", "es": "Spanish"}
+
 
 def check_translation_status(
-    root_path: Path | None = None, verbose: bool = False
+    root_path: Path | None = None,
+    lang: str = "vi",
+    verbose: bool = False,
 ) -> tuple[list[dict], list[dict]]:
     """
-    Compare modification times between English and Vietnamese files.
+    Compare modification times between English and translated files.
 
     Args:
         root_path: Root directory of the repository (default: script parent parent)
+        lang: Language code to check (e.g. 'vi', 'zh', 'es')
         verbose: Print detailed information
 
     Returns:
-        List of outdated files with metadata
+        Tuple of (outdated files, not translated files) with metadata
     """
     if root_path is None:
         root_path = Path(__file__).parent.parent
 
-    # Get all English markdown files (excluding vi/ directory)
+    # Exclude all translation directories and internal dirs from English files
+    exclude_dirs = set(SUPPORTED_LANGS) | {".claude"}
+
     en_files = [
         f
         for f in root_path.rglob("*.md")
-        if "vi/" not in str(f) and ".claude" not in str(f)
+        if not any(f"/{d}/" in str(f) or str(f).startswith(str(root_path / d)) for d in exclude_dirs)
     ]
 
-    # Get all Vietnamese markdown files
-    vi_dir = root_path / "vi"
-    vi_files = list(vi_dir.rglob("*.md")) if vi_dir.exists() else []
+    # Get translated markdown files
+    lang_dir = root_path / lang
+    lang_files = list(lang_dir.rglob("*.md")) if lang_dir.exists() else []
 
     # Build modification time mapping
     en_mtime = {f: f.stat().st_mtime for f in en_files}
-    vi_mtime = {f: f.stat().st_mtime for f in vi_files}
+    lang_mtime = {f: f.stat().st_mtime for f in lang_files}
 
     outdated = []
     not_translated = []
 
     for en_file, en_time in sorted(en_mtime.items()):
-        # Find corresponding Vietnamese file
         try:
             rel_path = en_file.relative_to(root_path)
         except ValueError:
-            # File is not relative to root (shouldn't happen)
             if verbose:
                 print(f"⚠️  Skipping non-relative file: {en_file}")
             continue
 
-        vi_file = root_path / "vi" / rel_path
+        lang_file = root_path / lang / rel_path
 
-        if vi_file in vi_mtime:
-            vi_time = vi_mtime[vi_file]
-            if en_time > vi_time:
+        if lang_file in lang_mtime:
+            lang_time = lang_mtime[lang_file]
+            if en_time > lang_time:
                 outdated.append(
                     {
                         "file": rel_path,
                         "en_mtime": datetime.fromtimestamp(en_time),
-                        "vi_mtime": datetime.fromtimestamp(vi_time),
-                        "days_diff": (en_time - vi_time) / 86400,  # Convert to days
+                        "lang_mtime": datetime.fromtimestamp(lang_time),
+                        "days_diff": (en_time - lang_time) / 86400,
                     }
                 )
         else:
@@ -80,32 +87,31 @@ def check_translation_status(
                 }
             )
 
-    # Sort outdated by days difference (most outdated first)
     outdated.sort(key=lambda x: x["days_diff"], reverse=True)
 
     return outdated, not_translated
 
 
-def format_outdated_table(outdated: list[dict]) -> str:
+def format_outdated_table(outdated: list[dict], lang: str) -> str:
     """Format outdated files as a Markdown table."""
     if not outdated:
         return "✅ **No outdated translations found!** All files are up to date.\n"
 
+    lang_upper = lang.upper()
     table = "### 🕰️ Outdated Translations (Need Update)\n\n"
-    table += "| File | Last EN Update | Last VI Update | Days Behind |\n"
+    table += f"| File | Last EN Update | Last {lang_upper} Update | Days Behind |\n"
     table += "|------|----------------|----------------|-------------|\n"
 
     for item in outdated:
         file_path = str(item["file"])
         en_date = item["en_mtime"].strftime("%Y-%m-%d")
-        vi_date = item["vi_mtime"].strftime("%Y-%m-%d")
+        lang_date = item["lang_mtime"].strftime("%Y-%m-%d")
         days = int(item["days_diff"])
 
-        # Truncate long paths for display
         if len(file_path) > 50:
             file_path = "..." + file_path[-47:]
 
-        table += f"| `{file_path}` | {en_date} | {vi_date} | 🔴 **{days} days** |\n"
+        table += f"| `{file_path}` | {en_date} | {lang_date} | 🔴 **{days} days** |\n"
 
     return table
 
@@ -122,7 +128,6 @@ def format_not_translated_table(not_translated: list[dict]) -> str:
     for item in not_translated:
         file_path = str(item["file"])
 
-        # Truncate long paths for display
         if len(file_path) > 60:
             file_path = "..." + file_path[-57:]
 
@@ -151,21 +156,9 @@ def format_summary(outdated: list[dict], not_translated: list[dict]) -> str:
     return summary
 
 
-def update_translation_queue(
-    root_path: Path, outdated: list[dict], not_translated: list[dict]
-) -> None:
-    """
-    Update vi/TRANSLATION_QUEUE.md with current status.
-
-    Note: This is a placeholder for future implementation.
-    Currently, the queue is manually maintained.
-    """
-    pass
-
-
 def main():
     parser = argparse.ArgumentParser(
-        description="Check Vietnamese translation status against English version"
+        description="Check translation status against English version"
     )
     parser.add_argument(
         "--verbose", "-v", action="store_true", help="Print detailed information"
@@ -178,6 +171,14 @@ def main():
         help="Root directory of repository (default: auto-detect)",
     )
     parser.add_argument(
+        "--lang",
+        "-l",
+        type=str,
+        default="vi",
+        choices=SUPPORTED_LANGS,
+        help="Language to check (default: vi)",
+    )
+    parser.add_argument(
         "--update-queue",
         action="store_true",
         help="Update TRANSLATION_QUEUE.md with current status (experimental)",
@@ -185,19 +186,18 @@ def main():
 
     args = parser.parse_args()
 
-    # Detect root path if not provided
     root_path = args.root or Path(__file__).parent.parent
+    lang = args.lang
+    lang_name = LANG_NAMES[lang]
 
     if args.verbose:
-        print(f"🔍 Checking translations in: {root_path}")
+        print(f"🔍 Checking {lang_name} translations in: {root_path}")
         print()
 
-    # Check translation status
-    outdated, not_translated = check_translation_status(root_path, args.verbose)
+    outdated, not_translated = check_translation_status(root_path, lang, args.verbose)
 
-    # Print summary to console
     print("=" * 60)
-    print("🌏 Vietnamese Translation Status Report")
+    print(f"🌏 {lang_name} Translation Status Report")
     print("=" * 60)
     print()
 
@@ -214,39 +214,39 @@ def main():
     )
     print()
 
+    lang_upper = lang.upper()
+
     if args.verbose and outdated:
         print("🕰️  OUTDATED FILES (need update):")
         print("-" * 60)
         for i, item in enumerate(outdated, 1):
             print(f"{i}. {item['file']}")
             print(f"   EN: {item['en_mtime'].strftime('%Y-%m-%d %H:%M')}")
-            print(f"   VI: {item['vi_mtime'].strftime('%Y-%m-%d %H:%M')}")
+            print(f"   {lang_upper}: {item['lang_mtime'].strftime('%Y-%m-%d %H:%M')}")
             print(f"   Behind by: {int(item['days_diff'])} days")
             print()
 
     if args.verbose and not_translated:
         print("📝 NOT TRANSLATED FILES:")
         print("-" * 60)
-        for i, item in enumerate(not_translated[:20], 1):  # Limit to 20
+        for i, item in enumerate(not_translated[:20], 1):
             print(f"{i}. {item['file']}")
 
         if len(not_translated) > 20:
             print(f"... and {len(not_translated) - 20} more files")
         print()
 
-    # Print Markdown-formatted report
     print("=" * 60)
     print("📄 Markdown Report (copy to TRANSLATION_QUEUE.md)")
     print("=" * 60)
     print()
 
     report = format_summary(outdated, not_translated)
-    report += format_outdated_table(outdated)
+    report += format_outdated_table(outdated, lang)
     report += format_not_translated_table(not_translated)
 
     print(report)
 
-    # Optionally update TRANSLATION_QUEUE.md
     if args.update_queue and args.verbose:
         print("⚠️  --update-queue is experimental and not yet implemented")
         print("   Please manually update TRANSLATION_QUEUE.md")

@@ -142,3 +142,44 @@ repos:
         entry: uv run scripts/build_epub.py --lang vi
         pass_filenames: false
         files: ^(vi/.*\.md|scripts/build_epub\.py)$
+
+  # Spanish documentation checks
+  - repo: local
+    hooks:
+      - id: spanish-markdown-lint
+        name: spanish-markdown-lint
+        language: node
+        entry: markdownlint
+        args: ['--ignore', 'node_modules', '--ignore', '.venv', '--config', '.markdownlint.json']
+        files: ^es/.*\.md$
+        additional_dependencies: ['markdownlint-cli']
+
+      - id: spanish-cross-references
+        name: spanish-cross-references
+        language: system
+        entry: python scripts/check_cross_references.py --lang es
+        pass_filenames: false
+        files: ^es/.*\.md$
+
+      - id: spanish-mermaid
+        name: spanish-mermaid-syntax
+        language: system
+        entry: python scripts/check_mermaid.py
+        pass_filenames: false
+        files: ^es/.*\.md$
+        verbose: true
+
+      - id: spanish-link-check
+        name: spanish-link-check
+        language: system
+        entry: python scripts/check_links.py
+        pass_filenames: false
+        files: ^es/.*\.md$
+        verbose: true
+
+      - id: spanish-build-epub
+        name: spanish-build-epub
+        language: system
+        entry: uv run scripts/build_epub.py --lang es
+        pass_filenames: false
+        files: ^(es/.*\.md|scripts/build_epub\.py)$

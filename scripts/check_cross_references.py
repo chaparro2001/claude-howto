@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate cross-references, anchors, and code fences in Markdown files."""
 
+import argparse
 import re
 import sys
 from pathlib import Path
@@ -17,8 +18,9 @@ IGNORE_DIRS = {
 IGNORE_FILES = {"README.backup.md"}
 
 
-def iter_md_files():
-    for f in Path().rglob("*.md"):
+def iter_md_files(root: Path | None = None):
+    base = root or Path()
+    for f in base.rglob("*.md"):
         if (
             not any(part in IGNORE_DIRS for part in f.parts)
             and f.name not in IGNORE_FILES
@@ -60,9 +62,14 @@ def strip_code_blocks(content: str) -> str:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description="Validate cross-references in Markdown files")
+    parser.add_argument("--lang", type=str, default=None, help="Language directory to check (e.g. vi, zh, es)")
+    args = parser.parse_args()
+
+    root = Path(args.lang) if args.lang else None
     errors: list[str] = []
 
-    for file_path in iter_md_files():
+    for file_path in iter_md_files(root):
         content = file_path.read_text(encoding="utf-8")
         # Strip code blocks before scanning for links/anchors to avoid false positives
         # from documentation examples inside code fences.
@@ -91,10 +98,11 @@ def main() -> int:
             errors.append(f"{file_path}: unmatched code fences")
 
     # All numbered lesson dirs must have README.md
+    base = root or Path()
     for i in range(1, 11):
         errors.extend(
             f"{d}: missing README.md"
-            for d in Path().glob(f"{i:02d}-*")
+            for d in base.glob(f"{i:02d}-*")
             if d.is_dir() and not (d / "README.md").exists()
         )
 
